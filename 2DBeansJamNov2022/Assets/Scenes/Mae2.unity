@@ -165,7 +165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 292}
+  m_AnchoredPosition: {x: 0, y: 292}
   m_SizeDelta: {x: 0.00012207, y: 584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401210807
@@ -183,7 +183,7 @@ MonoBehaviour:
   actorImage: {fileID: 1117538727}
   actorName: {fileID: 1946589635}
   messageText: {fileID: 1436493499}
-  backgroundBox: {fileID: 844406654}
+  textBox: {fileID: 844406655}
 --- !u!114 &401210808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,7 +780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 1.2426147, y: -210.6911}
+  m_AnchoredPosition: {x: 1.2426758, y: -210.6911}
   m_SizeDelta: {x: -61.53955, y: 104.3572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436493499
@@ -945,7 +945,7 @@ MonoBehaviour:
   actors:
   - name: Elias
     sprite: {fileID: 21300000, guid: 137a9aed4814e3a44af4de82cb11b6c2, type: 3}
-    Ui: {fileID: 21300000, guid: 457b60269cdcf304ab2e69fd79e49863, type: 3}
+    ui: {fileID: 21300000, guid: 457b60269cdcf304ab2e69fd79e49863, type: 3}
 --- !u!114 &1523180694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   actors:
   - name: Droni
     sprite: {fileID: 21300000, guid: b5f17f1d484d9954099fa75beb08ebb8, type: 3}
-    Ui: {fileID: 21300000, guid: d95a3df482803454890ba2100d34b088, type: 3}
+    ui: {fileID: 21300000, guid: d95a3df482803454890ba2100d34b088, type: 3}
 --- !u!114 &1711695074
 MonoBehaviour:
   m_ObjectHideFlags: 0
