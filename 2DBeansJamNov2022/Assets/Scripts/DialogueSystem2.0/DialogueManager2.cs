@@ -27,7 +27,6 @@ public class DialogueManager2 : MonoBehaviour
 
         Debug.Log("Started conversation! Loaded messages: " + messages.Length);
         DisplayMessage();
-        textBox.LeanScale(Vector3.one, 0.5f);
     }
 
     void DisplayMessage()
@@ -61,7 +60,6 @@ public class DialogueManager2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textBox.transform.localScale = Vector3.zero;
     }
 
     // Update is called once per frame
