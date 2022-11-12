@@ -1737,9 +1737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b73850529fd23b4d975172b507bd055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 685294610}
-  dialogueText: {fileID: 1057660441}
-  animator: {fileID: 603983827}
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!95 &629675874
 Animator:
   serializedVersion: 4
@@ -1784,7 +1784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675875440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 573.47345, y: 290.92987, z: 30.142092}
+  m_LocalPosition: {x: 2011, y: 290.92987, z: 30.142092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2059,9 +2059,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b73850529fd23b4d975172b507bd055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 1539740910}
-  dialogueText: {fileID: 168422231}
-  animator: {fileID: 1158931235}
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!4 &779572206
 Transform:
   m_ObjectHideFlags: 0
@@ -2515,7 +2515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 2088295734}
   dialogueText: {fileID: 907772943}
-  animator: {fileID: 101085954}
+  animator: {fileID: 0}
 --- !u!4 &1149335461
 Transform:
   m_ObjectHideFlags: 0
@@ -3565,7 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Erwin
+    name: Elias
     sentences:
     - Hi ich bin Elias
     - Test123
