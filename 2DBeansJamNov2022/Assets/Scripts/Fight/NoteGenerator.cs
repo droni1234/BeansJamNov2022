@@ -27,16 +27,16 @@ public class NoteGenerator : MonoBehaviour
             switch (note.key)
             {
                 case noteKey.left:
-                    Instantiate(left, leftReference.transform.position + Vector3.up * note.time, Quaternion.identity, transform);
+                    Instantiate(left, leftReference.transform.position + Vector3.up * note.time, left.transform.rotation, transform);
                     break;
                 case noteKey.down:
-                    Instantiate(down, downReference.transform.position + Vector3.up * note.time, Quaternion.identity, transform);
+                    Instantiate(down, downReference.transform.position + Vector3.up * note.time, down.transform.rotation, transform);
                     break;
                 case noteKey.up:
-                    Instantiate(up, upReference.transform.position + Vector3.up * note.time, Quaternion.identity, transform);
+                    Instantiate(up, upReference.transform.position + Vector3.up * note.time, up.transform.rotation, transform);
                     break;
                 case noteKey.right:
-                    Instantiate(right, rightReference.transform.position + Vector3.up * note.time, Quaternion.identity, transform);
+                    Instantiate(right, rightReference.transform.position + Vector3.up * note.time, right.transform.rotation, transform);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
