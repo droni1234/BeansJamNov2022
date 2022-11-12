@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
+  m_Name: Battle
+  m_EditorClassIdentifier: 
+  bpm: 144
+  warmup: 0
+  audio: {fileID: 8300000, guid: 1b9233d8216b2a94e9357440420a9456, type: 3}
+  enemy:
+    sprites:
+    - {fileID: 21300000, guid: e5600378dd761e64d9423790c482bf36, type: 3}
+    - {fileID: 21300000, guid: 1e0f2b45945c8254abd59f40d783c11f, type: 3}
+  player:
+    sprites:
+    - {fileID: 21300000, guid: 0ac55f9f886d827408c102bdf33c5ff7, type: 3}
+    - {fileID: 21300000, guid: eb81c5f176e01b746be35f0aa3603593, type: 3}
+  notes:
+  - time: 5
+    key: 1
+  - time: 25
+    key: 2
+  - time: 26
+    key: 3
+  - time: 27
+    key: 0
+  - time: 28
+    key: 1
+  - time: 29
+    key: 2
+  - time: 30
+    key: 3
+  - time: 31
+    key: 0
+  - time: 32
+    key: 2
+  - time: 80
+    key: 3
+  looks:
+  - time: 0
+    lookTowards: 1
+  - time: 1
+    lookTowards: 1
+  sprites:
+  - time: 5
+    type: 0
+    spriteIndex: 0
+  - time: 10
+    type: 0
+    spriteIndex: 1
+  - time: 25
+    type: 0
+    spriteIndex: 0
+  - time: 20
+    type: 1
+    spriteIndex: 1
