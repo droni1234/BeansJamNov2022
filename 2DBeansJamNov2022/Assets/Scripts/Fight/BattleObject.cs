@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [CreateAssetMenu(fileName = "Battle", menuName = "ScriptableObjects/BattleScript", order = 1)]
 public class BattleObject : ScriptableObject
@@ -18,9 +20,14 @@ public class BattleObject : ScriptableObject
 
     public List<LookTowards> looks;
     public List<SetSprite> sprites;
+
+
+    public void addRandomNextNote()
+    {
+        var time = Mathf.Round(notes.Last().time) + 1;
+        notes.Add(new Note(time, (noteKey)Random.Range(0, 4)));
+    }
 }
-
-
 
 [Serializable]
 public class Enemy : Character
@@ -75,6 +82,12 @@ public class Note : Event
 { 
     public noteKey key;
 
+    public Note(float time, noteKey direction)
+    {
+        this.time = time;
+        this.key = direction;
+    }
+    
     public Note(Note note)
     {
         this.key = note.key;

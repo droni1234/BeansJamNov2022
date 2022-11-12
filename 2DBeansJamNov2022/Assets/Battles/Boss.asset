@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
+  m_Name: Boss
+  m_EditorClassIdentifier: 
+  bpm: 150
+  speed: 15
+  warmup: 4
+  audio: {fileID: 8300000, guid: 8494fb1a3ed368a4e887179bf85b0cad, type: 3}
+  enemy:
+    sprites: []
+  player:
+    sprites: []
+  notes:
+  - time: 0
+    key: 0
+  - time: 1
+    key: 3
+  - time: 2
+    key: 0
+  - time: 3
+    key: 2
+  - time: 4
+    key: 0
+  - time: 5
+    key: 0
+  - time: 6
+    key: 0
+  - time: 7
+    key: 1
+  - time: 8
+    key: 0
+  - time: 9
+    key: 0
+  - time: 10
+    key: 0
+  - time: 11
+    key: 0
+  - time: 12
+    key: 0
+  - time: 13
+    key: 0
+  - time: 14
+    key: 0
+  - time: 15
+    key: 0
+  - time: 16
+    key: 0
+  - time: 17
+    key: 0
+  - time: 18
+    key: 0
+  - time: 19
+    key: 0
+  - time: 20
+    key: 0
+  - time: 21
+    key: 0
+  - time: 22
+    key: 0
+  - time: 23
+    key: 0
+  - time: 24
+    key: 0
+  - time: 25
+    key: 0
+  - time: 26
+    key: 0
+  - time: 27
+    key: 0
+  - time: 28
+    key: 0
+  - time: 29
+    key: 0
+  - time: 30
+    key: 0
+  - time: 31
+    key: 0
+  - time: 32
+    key: 0
+  - time: 33
+    key: 0
+  - time: 34
+    key: 0
+  - time: 35
+    key: 0
+  - time: 36
+    key: 0
+  - time: 37
+    key: 0
+  - time: 38
+    key: 0
+  - time: 39
+    key: 0
+  - time: 40
+    key: 0
+  - time: 41
+    key: 0
+  - time: 42
+    key: 0
+  - time: 43
+    key: 0
+  - time: 44
+    key: 0
+  - time: 45
+    key: 0
+  - time: 46
+    key: 0
+  - time: 47
+    key: 0
+  - time: 48
+    key: 0
+  - time: 49
+    key: 0
+  - time: 50
+    key: 0
+  - time: 51
+    key: 0
+  - time: 52
+    key: 0
+  - time: 53
+    key: 0
+  - time: 54
+    key: 0
+  - time: 55
+    key: 0
+  - time: 56
+    key: 0
+  - time: 57
+    key: 0
+  - time: 58
+    key: 0
+  - time: 59
+    key: 0
+  - time: 60
+    key: 0
+  - time: 61
+    key: 0
+  - time: 62
+    key: 0
+  - time: 63
+    key: 0
+  - time: 64
+    key: 0
+  - time: 65
+    key: 0
+  - time: 66
+    key: 0
+  - time: 67
+    key: 0
+  - time: 68
+    key: 0
+  - time: 69
+    key: 0
+  - time: 70
+    key: 0
+  - time: 71
+    key: 0
+  - time: 72
+    key: 0
+  - time: 73
+    key: 0
+  - time: 74
+    key: 0
+  - time: 75
+    key: 0
+  - time: 76
+    key: 0
+  - time: 77
+    key: 0
+  - time: 78
+    key: 0
+  - time: 79
+    key: 0
+  - time: 80
+    key: 0
+  - time: 81
+    key: 0
+  - time: 82
+    key: 0
+  - time: 83
+    key: 0
+  - time: 84
+    key: 0
+  - time: 85
+    key: 0
+  - time: 86
+    key: 0
+  - time: 87
+    key: 0
+  - time: 88
+    key: 0
+  - time: 89
+    key: 0
+  - time: 90
+    key: 0
+  - time: 91
+    key: 0
+  - time: 92
+    key: 0
+  - time: 93
+    key: 0
+  - time: 94
+    key: 0
+  - time: 95
+    key: 0
+  - time: 96
+    key: 0
+  - time: 97
+    key: 0
+  - time: 98
+    key: 0
+  - time: 99
+    key: 0
+  - time: 100
+    key: 3
+  - time: 101
+    key: 3
+  - time: 102
+    key: 0
+  - time: 103
+    key: 0
+  - time: 104
+    key: 0
+  - time: 105
+    key: 3
+  - time: 106
+    key: 2
+  - time: 107
+    key: 3
+  - time: 108
+    key: 0
+  - time: 109
+    key: 0
+  - time: 110
+    key: 2
+  - time: 111
+    key: 0
+  - time: 112
+    key: 3
+  - time: 113
+    key: 2
+  - time: 114
+    key: 0
+  - time: 115
+    key: 3
+  - time: 116
+    key: 2
+  - time: 117
+    key: 3
+  - time: 118
+    key: 2
+  - time: 119
+    key: 3
+  - time: 120
+    key: 1
+  - time: 121
+    key: 1
+  - time: 122
+    key: 3
+  - time: 123
+    key: 3
+  - time: 124
+    key: 0
+  - time: 125
+    key: 1
+  - time: 126
+    key: 1
+  - time: 127
+    key: 1
+  - time: 128
+    key: 2
+  - time: 129
+    key: 0
+  - time: 130
+    key: 2
+  - time: 131
+    key: 2
+  - time: 132
+    key: 1
+  - time: 133
+    key: 3
+  - time: 134
+    key: 1
+  - time: 135
+    key: 3
+  - time: 136
+    key: 1
+  - time: 137
+    key: 1
+  - time: 138
+    key: 3
+  - time: 139
+    key: 2
+  - time: 140
+    key: 2
+  - time: 141
+    key: 2
+  - time: 142
+    key: 1
+  - time: 143
+    key: 0
+  - time: 144
+    key: 3
+  - time: 145
+    key: 3
+  - time: 146
+    key: 3
+  - time: 147
+    key: 0
+  - time: 148
+    key: 2
+  - time: 149
+    key: 0
+  - time: 150
+    key: 2
+  - time: 151
+    key: 2
+  - time: 152
+    key: 1
+  - time: 153
+    key: 2
+  looks: []
+  sprites: []

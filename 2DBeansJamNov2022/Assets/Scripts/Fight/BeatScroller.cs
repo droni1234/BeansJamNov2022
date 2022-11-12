@@ -30,6 +30,6 @@ public class BeatScroller : MonoBehaviour
             return;
         }
 
-        transform.position += Vector3.down * (beatTempo * Time.deltaTime * 4 * speed);
+        transform.position += Vector3.down * (Time.deltaTime * speed);
     }
 }
