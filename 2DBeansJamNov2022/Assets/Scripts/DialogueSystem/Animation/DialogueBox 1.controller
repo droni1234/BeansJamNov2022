@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: ErwinOpen
+    m_ConditionEvent: IsOpen
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4248022964233780679}
@@ -61,7 +61,7 @@ AnimatorController:
   m_Name: DialogueBox 1
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: ErwinOpen
+  - m_Name: IsOpen
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: ErwinOpen
+    m_ConditionEvent: IsOpen
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8190506893701846451}
