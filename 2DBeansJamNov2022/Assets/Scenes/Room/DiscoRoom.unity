@@ -1095,6 +1095,7 @@ MonoBehaviour:
   transitionAnim: {fileID: 1051681389}
   musicAnim: {fileID: 474850733}
   transitionTime: 0.5
+  music: {fileID: 8300000, guid: 5ad4bcd00a1558d4e944bda90b99fed3, type: 3}
 --- !u!4 &1208208569
 Transform:
   m_ObjectHideFlags: 0
@@ -1119,7 +1120,7 @@ AudioSource:
   m_GameObject: {fileID: 1208208567}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 408170362358663544, guid: 6c57ab3fdc8558a48b91085148769ae6, type: 2}
   m_audioClip: {fileID: 8300000, guid: bdeb9d5466488184fa85f8edd8547290, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

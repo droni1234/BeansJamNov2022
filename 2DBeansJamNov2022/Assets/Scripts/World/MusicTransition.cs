@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicTransition : MonoBehaviour{
 
-    private static MusicTransition instance;
+    public static MusicTransition instance;
 
     // Start is called before the first frame update
     void Awake() 
@@ -16,7 +16,7 @@ public class MusicTransition : MonoBehaviour{
         }    
         else
         {
-            
+            Destroy(gameObject);
         }
     }
 }

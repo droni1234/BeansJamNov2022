@@ -18,7 +18,6 @@ public class FightTrigger : MonoBehaviour
     {   
         if (dialogue)
         {
-            Debug.Log("Start");
             DialogueManager2.instance.Fight(dialogue.messages,dialogue.actors, this);
         }
         else

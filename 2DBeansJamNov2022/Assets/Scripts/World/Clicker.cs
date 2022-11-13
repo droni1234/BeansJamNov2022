@@ -15,11 +15,16 @@ public class Clicker : MonoBehaviour
     public Animator musicAnim;
     public float transitionTime = 0;
 
+    public AudioClip music;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        musicAnim = MusicTransition.instance.GetComponent<Animator>();
+        musicAnim?.SetTrigger("FadeIn");
+        musicAnim.GetComponent<AudioSource>().clip = music;
+        musicAnim.GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -113,8 +118,8 @@ public class Clicker : MonoBehaviour
 
     IEnumerator LoadLevel(string levelIndex)
             {
-                transitionAnim.SetTrigger("end");
-                musicAnim.SetTrigger("FadeOut");
+                transitionAnim?.SetTrigger("end");
+                musicAnim?.SetTrigger("FadeOut");
                 yield return new WaitForSeconds(transitionTime);
                 SceneManager.LoadScene(levelIndex);
                 

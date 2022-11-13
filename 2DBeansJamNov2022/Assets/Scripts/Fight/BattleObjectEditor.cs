@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEditor;
 using static noteKey;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(BattleObject))]
 public class BattleObjectEditor : Editor
 {
@@ -304,3 +305,5 @@ public class BattleObjectEditor : Editor
         EditorGUILayout.LabelField("Zeit im Track: " + (1 / (((BattleObject) target).bpm / 60)) * pointer + " Sekunden");
     }
 }
+
+#endif

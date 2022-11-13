@@ -133,14 +133,14 @@ PrefabInstance:
     - target: {fileID: 2296820377846325944, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: battle
       value: 
-      objectReference: {fileID: 11400000, guid: 0c14a028832e5144ea590af1945b7cd4, type: 2}
+      objectReference: {fileID: 11400000, guid: 38af858c261d8f2459f252e91e6290c9, type: 2}
     - target: {fileID: 2296820377846325944, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 1508532958}
     - target: {fileID: 2296820377846325944, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: levelname
-      value: VipRoom
+      value: VipRoom2
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325945, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: m_Pivot.x
@@ -208,11 +208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325945, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -8.8052
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325945, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -19.545
+      value: -19.542
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325945, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -228,6 +228,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325946, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2296820377846325947, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
+      propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325950, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
@@ -1006,6 +1010,7 @@ MonoBehaviour:
   transitionAnim: {fileID: 1851063060}
   musicAnim: {fileID: 965424789}
   transitionTime: 0.5
+  music: {fileID: 8300000, guid: 5ad4bcd00a1558d4e944bda90b99fed3, type: 3}
 --- !u!4 &1208208569
 Transform:
   m_ObjectHideFlags: 0
@@ -1392,7 +1397,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossSimon1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7246189255212308075, guid: 6ef313e5437e8574fa29779c649e7973, type: 3}
+    - {fileID: 7246189255212308076, guid: 6ef313e5437e8574fa29779c649e7973, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ef313e5437e8574fa29779c649e7973, type: 3}
 --- !u!224 &1508532957 stripped
 RectTransform:
@@ -1596,7 +1603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1998,6 +2005,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7997655297228331184, guid: be9cf34733db61b43a0ab6e4fb31706c, type: 3}
   m_PrefabInstance: {fileID: 1870089363}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1870364231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870364233}
+  - component: {fileID: 1870364232}
+  m_Layer: 0
+  m_Name: FightTriggerMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1870364232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870364231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a524c0d20849a4291c209be3393328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1870364233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870364231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2039155325
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -34,6 +34,7 @@ public class FightTriggerMaster : MonoBehaviour
         fightSystem.winLevel = level_cache;
         fightSystem.startPlaying = true;
         SceneManager.sceneLoaded -= StartFight;
+        DestroyImmediate(gameObject);
     }
     
 }

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room/ToiletteRoom.unity
     guid: 25054e48a6ccd3a4cb9b49d7309595b1
+  - enabled: 1
+    path: Assets/Scenes/Room/VipRoom2.unity
+    guid: 004c43b491165644b958b33b0cd5e092
   m_configObjects: {}

@@ -89,9 +89,10 @@ public class DialogueManager2 : MonoBehaviour
 
     public void Fight(Message[] messages, Actor[] actors, FightTrigger fight)
     {
-        this.fight = fight;
         OpenDialogue(messages, actors);
+        this.fight = fight;
     }
+    // ReSharper disable Unity.PerformanceAnalysis
     void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false);
@@ -99,6 +100,7 @@ public class DialogueManager2 : MonoBehaviour
         chatboxCanvasGroup.blocksRaycasts = false;
         if (fight)
         {
+            MusicTransition.instance.GetComponent<AudioSource>().Stop();
             FightTriggerMaster.instance.Fight(fight.battle, fight.levelname);
         }
     }

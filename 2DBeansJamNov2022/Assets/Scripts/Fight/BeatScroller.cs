@@ -23,13 +23,13 @@ public class BeatScroller : MonoBehaviour
     [HideInInspector]
     public float beatTempo;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!isRunning)
         {
             return;
         }
 
-        transform.position += Vector3.down * (Time.deltaTime * speed);
+        transform.position += Vector3.down * (Time.fixedDeltaTime * speed);
     }
 }

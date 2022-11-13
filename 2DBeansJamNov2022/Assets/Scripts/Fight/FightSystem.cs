@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -99,6 +100,8 @@ public class FightSystem : MonoBehaviour
         currentScore = 0;
         startTime = Time.time;
         multiplier = 1;
+        setPlayerSprite(0);
+        setEnemySprite(0);
 
         var notesCopy = battle.notes.Select(note => new Note(note)).ToList();
         notesCopy.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo * scroller.speed);
@@ -115,7 +118,7 @@ public class FightSystem : MonoBehaviour
         
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
 
         scoreText.text = 
@@ -142,7 +145,7 @@ public class FightSystem : MonoBehaviour
         if (setSpriteList.Count > 0)
             CheckSetSpriteCommand(setSpriteList.First());
 
-        health -=  Time.deltaTime / 100F * healthDifficulty;
+        health -=  Time.fixedDeltaTime / 100F * healthDifficulty;
         cameraDeath.PlayInFixedTime(0,0, 1F - health);
         if (health <= 0)
         {
@@ -157,7 +160,7 @@ public class FightSystem : MonoBehaviour
 
     private void CheckSetSpriteCommand(SetSprite setSprite)
     {
-        if (setSprite.time * scroller.beatTempo  > currentTime) return;
+        if (setSprite.time >= currentTime) return;
         
         switch(setSprite.type)
         {
@@ -186,7 +189,7 @@ public class FightSystem : MonoBehaviour
     
     private void CheckLookAtCommand(LookTowards lookTowards)
     {
-        if (lookTowards.time * scroller.beatTempo > currentTime) return;
+        if (lookTowards.time > currentTime) return;
         
         switch (lookTowardList.First().lookTowards)
         {
@@ -255,10 +258,12 @@ public class FightSystem : MonoBehaviour
     private void Win()
     {
         SceneManager.LoadSceneAsync(winLevel, LoadSceneMode.Single);
+        Destroy(this);
     }
     
     private void Loose()
     {
         SceneManager.LoadSceneAsync("Gameover", LoadSceneMode.Single);
+        Destroy(this);
     }
 }

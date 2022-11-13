@@ -12,19 +12,16 @@ public class DelayedAudio : MonoBehaviour
     private AudioSource sound;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         startTime = Time.deltaTime;
         sound = GetComponent<AudioSource>();
+        StartCoroutine(delayedStart());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator delayedStart()
     {
-        if (Time.time - startTime > delay)
-        {
-            if(!sound.isPlaying)
-                sound.Play();
-        }
+        yield return new WaitForSeconds(delay);
+        sound.Play();
     }
 }
