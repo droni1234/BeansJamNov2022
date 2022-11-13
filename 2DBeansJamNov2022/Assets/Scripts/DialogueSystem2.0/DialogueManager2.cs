@@ -16,6 +16,8 @@ public class DialogueManager2 : MonoBehaviour
 
     public AudioSource voiceover;
 
+    private FightTrigger fight;
+
     Message[] currentMessage;
     Actor[] currentActors;
     int activeMessage = 0;
@@ -34,7 +36,7 @@ public class DialogueManager2 : MonoBehaviour
         currentActors = actors;
         activeMessage = 0;
         isActive = true;
-
+        fight = null;
         DisplayMessage();
         
     }
@@ -85,11 +87,20 @@ public class DialogueManager2 : MonoBehaviour
         }
     }
 
+    public void Fight(Message[] messages, Actor[] actors, FightTrigger fight)
+    {
+        this.fight = fight;
+        OpenDialogue(messages, actors);
+    }
     void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false);
         chatboxCanvasGroup.alpha = 0F;
         chatboxCanvasGroup.blocksRaycasts = false;
-	}
+        if (fight)
+        {
+            FightTriggerMaster.instance.Fight(fight.battle, fight.levelname);
+        }
+    }
 
 }

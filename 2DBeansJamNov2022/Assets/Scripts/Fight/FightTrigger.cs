@@ -12,9 +12,19 @@ public class FightTrigger : MonoBehaviour
 
     public BattleObject battle;
     public string levelname;
-    
+    public DialogueTrigger dialogue;
+
     public void Fight()
-    {
-        FightTriggerMaster.instance.Fight(battle, levelname);
+    {   
+        if (dialogue)
+        {
+            Debug.Log("Start");
+            DialogueManager2.instance.Fight(dialogue.messages,dialogue.actors, this);
+        }
+        else
+        {
+            FightTriggerMaster.instance.Fight(battle, levelname);
+        }
+        
     }
 }
