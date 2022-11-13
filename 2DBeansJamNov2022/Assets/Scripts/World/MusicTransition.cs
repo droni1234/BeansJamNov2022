@@ -16,7 +16,7 @@ public class MusicTransition : MonoBehaviour{
         }    
         else
         {
-            Destroy(gameObject);
+            
         }
     }
 }

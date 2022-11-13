@@ -392,3 +392,18 @@ MonoBehaviour:
   - time: 16
     type: 0
     spriteIndex: 1
+  - time: 50
+    type: 0
+    spriteIndex: 0
+  - time: 52
+    type: 0
+    spriteIndex: 1
+  - time: 53
+    type: 0
+    spriteIndex: 1
+  - time: 63
+    type: 0
+    spriteIndex: 1
+  - time: 63
+    type: 0
+    spriteIndex: 0

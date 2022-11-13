@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
+  m_Name: Zapdap
+  m_EditorClassIdentifier: 
+  bpm: 128
+  speed: 10
+  warmup: 4
+  audio: {fileID: 8300000, guid: d5c86f87573187f4e9966e1aa83947e5, type: 3}
+  enemy:
+    sprites: []
+  player:
+    sprites: []
+  notes:
+  - time: 0
+    key: 0
+  - time: 1
+    key: 2
+  - time: 2
+    key: 0
+  - time: 3
+    key: 3
+  - time: 4
+    key: 1
+  - time: 5
+    key: 1
+  - time: 6
+    key: 3
+  - time: 7
+    key: 1
+  - time: 8
+    key: 0
+  - time: 9
+    key: 0
+  - time: 10
+    key: 0
+  - time: 11
+    key: 2
+  - time: 12
+    key: 0
+  - time: 13
+    key: 0
+  - time: 14
+    key: 3
+  - time: 15
+    key: 3
+  - time: 16
+    key: 2
+  - time: 17
+    key: 0
+  - time: 18
+    key: 0
+  - time: 19
+    key: 2
+  - time: 20
+    key: 0
+  - time: 21
+    key: 1
+  - time: 22
+    key: 2
+  - time: 23
+    key: 3
+  - time: 24
+    key: 0
+  - time: 25
+    key: 3
+  - time: 26
+    key: 3
+  - time: 27
+    key: 3
+  - time: 28
+    key: 0
+  - time: 29
+    key: 2
+  - time: 30
+    key: 0
+  - time: 31
+    key: 2
+  - time: 32
+    key: 3
+  - time: 33
+    key: 3
+  - time: 34
+    key: 3
+  - time: 35
+    key: 2
+  - time: 36
+    key: 3
+  - time: 37
+    key: 2
+  - time: 38
+    key: 3
+  - time: 39
+    key: 2
+  - time: 40
+    key: 2
+  - time: 41
+    key: 1
+  - time: 42
+    key: 1
+  - time: 43
+    key: 3
+  - time: 44
+    key: 0
+  - time: 45
+    key: 1
+  - time: 46
+    key: 2
+  - time: 47
+    key: 0
+  - time: 48
+    key: 0
+  - time: 49
+    key: 3
+  - time: 50
+    key: 0
+  - time: 50.25
+    key: 3
+  - time: 50.5
+    key: 0
+  - time: 50.75
+    key: 3
+  - time: 51
+    key: 0
+  - time: 51.25
+    key: 3
+  - time: 51.5
+    key: 1
+  - time: 51.75
+    key: 2
+  - time: 52
+    key: 1
+  - time: 52.25
+    key: 2
+  - time: 52.5
+    key: 1
+  - time: 52.75
+    key: 2
+  - time: 54
+    key: 0
+  - time: 54.125
+    key: 1
+  - time: 54.75
+    key: 2
+  - time: 54.875
+    key: 3
+  - time: 56
+    key: 0
+  - time: 56.25
+    key: 3
+  - time: 56.5
+    key: 0
+  - time: 56.75
+    key: 3
+  - time: 57
+    key: 0
+  - time: 57.25
+    key: 3
+  - time: 58
+    key: 3
+  - time: 59
+    key: 0
+  - time: 60
+    key: 2
+  - time: 61
+    key: 0
+  - time: 62
+    key: 2
+  - time: 63
+    key: 2
+  - time: 64
+    key: 0
+  - time: 65
+    key: 3
+  - time: 66
+    key: 2
+  - time: 67
+    key: 0
+  - time: 68
+    key: 0
+  - time: 69
+    key: 0
+  - time: 70
+    key: 3
+  - time: 71
+    key: 3
+  - time: 72
+    key: 2
+  - time: 73
+    key: 1
+  - time: 74
+    key: 3
+  - time: 75
+    key: 1
+  - time: 76
+    key: 1
+  - time: 77
+    key: 0
+  - time: 78
+    key: 2
+  - time: 79
+    key: 2
+  - time: 80
+    key: 2
+  - time: 81
+    key: 2
+  - time: 82
+    key: 3
+  - time: 83
+    key: 2
+  - time: 84
+    key: 1
+  - time: 85
+    key: 3
+  - time: 86
+    key: 3
+  - time: 87
+    key: 3
+  - time: 88
+    key: 2
+  - time: 89
+    key: 3
+  - time: 90
+    key: 3
+  - time: 91
+    key: 3
+  - time: 92
+    key: 3
+  - time: 93
+    key: 1
+  - time: 94
+    key: 2
+  - time: 95
+    key: 1
+  - time: 96
+    key: 0
+  - time: 97
+    key: 0
+  looks: []
+  sprites: []

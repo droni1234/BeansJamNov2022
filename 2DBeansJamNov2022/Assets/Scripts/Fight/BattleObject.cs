@@ -32,6 +32,16 @@ public class BattleObject : ScriptableObject
     {
         notes.Add(new Note(time, direction));
     }
+
+    public void addSprite(float time, CharacterType type, int index)
+    {
+        sprites.Add(new SetSprite(time, type, index));
+    }
+
+    public void addFocus(float time, POI poi)
+    {
+        looks.Add(new LookTowards(time, poi));
+    }
 }
 
 [Serializable]
@@ -55,6 +65,11 @@ public class Character
 [Serializable]
 public class LookTowards : Event
 {
+    public LookTowards(float time, POI lookTowards)
+    {
+        this.time = time;
+        this.lookTowards = lookTowards;
+    }
 
     public LookTowards(LookTowards _looktowards)
     {
@@ -71,6 +86,13 @@ public class LookTowards : Event
 public class SetSprite : Event
 {
 
+    public SetSprite(float time, CharacterType type, int spriteIndex)
+    {
+        this.time = time;
+        this.type = type;
+        this.spriteIndex = spriteIndex;
+    }
+    
     public SetSprite(SetSprite setSprite)
     {
         this.time = setSprite.time;

@@ -28,7 +28,7 @@ public class MenuController : MonoBehaviour
     public void StartGame()
     {
         isMenuVisible = false;
-        SceneManager.LoadSceneAsync(startScene, Additive);
+        SceneManager.LoadSceneAsync(startScene, LoadSceneMode.Single);
     }
 
     public void QuitGame()

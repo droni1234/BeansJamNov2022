@@ -31,5 +31,6 @@ public class NoteObject : MonoBehaviour
         pressable = false;
 
         FightSystem.instance.NoteMissed();
+        Destroy(gameObject, 5F);
     }
 }
