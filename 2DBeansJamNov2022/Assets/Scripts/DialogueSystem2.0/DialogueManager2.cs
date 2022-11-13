@@ -27,6 +27,7 @@ public class DialogueManager2 : MonoBehaviour
 
         Debug.Log("Started conversation! Loaded messages: " + messages.Length);
         DisplayMessage();
+        
     }
 
     void DisplayMessage()
