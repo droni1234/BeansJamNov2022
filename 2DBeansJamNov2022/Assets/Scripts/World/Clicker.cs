@@ -12,10 +12,10 @@ public class Clicker : MonoBehaviour
     
     //Animator
     public Animator transitionAnim;
+    public Animator musicAnim;
     public float transitionTime = 0;
 
-    //Sound
-    [SerializeField] private AudioSource walk;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -55,24 +55,24 @@ public class Clicker : MonoBehaviour
                         print("Das ist die Disco");
                         
                         LoadDisco();
-                        walk.Play();
+                        
                     }
                     else if(hit.collider.gameObject.tag == "VipEingang")
                     {
                         print("Das ist die der Vip Bereich");
-                        walk.Play();
+                        
                         LoadVip();
                     }
                     else if(hit.collider.gameObject.tag == "ToiletteEingang")
                     {
                         print("Das ist die Toilette");
-                        walk.Play();
+                        
                         LoadToilette();
                     }
                     else if(hit.collider.gameObject.tag == "EingangEingang")
                     {
                         print("Das ist der Eingang");
-                        walk.Play();
+                        
                         LoadEingang();
                         
                     }
@@ -113,6 +113,7 @@ public class Clicker : MonoBehaviour
     IEnumerator LoadLevel(int levelIndex)
             {
                 transitionAnim.SetTrigger("end");
+                musicAnim.SetTrigger("FadeOut");
                 yield return new WaitForSeconds(transitionTime);
                 SceneManager.LoadScene(levelIndex);
                 
