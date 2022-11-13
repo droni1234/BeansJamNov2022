@@ -620,7 +620,7 @@ MonoBehaviour:
     ton: {fileID: 0}
   actors:
   - name: Simon
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: b24fc734d389b2c45bbc306bb766adc5, type: 3}
     ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
 --- !u!114 &290486291
 MonoBehaviour:
@@ -917,7 +917,7 @@ MonoBehaviour:
   actors:
   - name: Syril
     sprite: {fileID: 0}
-    ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
+    ui: {fileID: 21300000, guid: 91e49f5dd7f89094a938ca5a1d9a49af, type: 3}
 --- !u!114 &315388835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3317,7 +3317,7 @@ MonoBehaviour:
     ton: {fileID: 0}
   actors:
   - name: Simon
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: b24fc734d389b2c45bbc306bb766adc5, type: 3}
     ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
 --- !u!114 &1259441441
 MonoBehaviour:
@@ -4180,8 +4180,14 @@ MonoBehaviour:
   - actorID: 0
     message: Schau mal! Ein Foto von meiner Katze!
     ton: {fileID: 0}
+  - actorID: 0
+    message: Miau
+    ton: {fileID: 0}
   actors:
   - name: Elias
+    sprite: {fileID: 21300000, guid: 86df93e34a311c446b59155154e7efe4, type: 3}
+    ui: {fileID: 21300000, guid: 457b60269cdcf304ab2e69fd79e49863, type: 3}
+  - name: Katze
     sprite: {fileID: 21300000, guid: 86df93e34a311c446b59155154e7efe4, type: 3}
     ui: {fileID: 21300000, guid: 457b60269cdcf304ab2e69fd79e49863, type: 3}
 --- !u!114 &1523180694
@@ -4603,13 +4609,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorID: 0
-    message: "Moin, du m\xFCder Mitmensch!"
+    message: "Yare Yare Daze\u2026"
     ton: {fileID: 0}
   - actorID: 0
-    message: Normalerweise geh ich nicht feiern...
+    message: Du wirst nie gegen meine Jojo Poses ankommen!
     ton: {fileID: 0}
   - actorID: 0
-    message: "wei\xDFt du, ich bin n\xE4mlich Informatiker."
+    message: Ich habe als studierter Weeb jahrelang meinen Stand traniert!
+    ton: {fileID: 0}
+  - actorID: 0
+    message: Za Warudo!!!!
     ton: {fileID: 0}
   actors:
   - name: Droni
@@ -4774,7 +4783,7 @@ MonoBehaviour:
     ton: {fileID: 0}
   actors:
   - name: Ilona
-    sprite: {fileID: 21300000, guid: db907c461cf340944b2f31f4499e9771, type: 3}
+    sprite: {fileID: 21300000, guid: b8384f3d8a328de4cb07ae397ed093d3, type: 3}
     ui: {fileID: 21300000, guid: 6e2aa41014409c14285494ad5af19426, type: 3}
 --- !u!114 &1728363062
 MonoBehaviour:
@@ -5210,11 +5219,11 @@ MonoBehaviour:
     message: "Komm schon, ich wei\xDF wie wir dich wachhalten."
     ton: {fileID: 0}
   - actorID: 0
-    message: "Join mich f\xFCr ne Runde Overwatch2!"
+    message: "Join mir f\xFCr ne Runde Overwatch2!"
     ton: {fileID: 0}
   actors:
   - name: Erwin
-    sprite: {fileID: 21300000, guid: e207edb051ae2ae4686c4ba9aab65a2c, type: 3}
+    sprite: {fileID: 21300000, guid: 6c4d93220fdba2846914e59ed4b3c620, type: 3}
     ui: {fileID: 21300000, guid: 270ee37b35e97f7438e6627b3889661f, type: 3}
 --- !u!114 &1849376892
 MonoBehaviour:
@@ -5536,8 +5545,8 @@ MonoBehaviour:
     ton: {fileID: 0}
   actors:
   - name: Luky
-    sprite: {fileID: 0}
-    ui: {fileID: 21300000, guid: 270ee37b35e97f7438e6627b3889661f, type: 3}
+    sprite: {fileID: 21300000, guid: 037b85816e75b2f4cb8b354849e41735, type: 3}
+    ui: {fileID: 21300000, guid: 9c1f9544ef71c4b4aaeb922be50db839, type: 3}
 --- !u!114 &1895202906
 MonoBehaviour:
   m_ObjectHideFlags: 0
