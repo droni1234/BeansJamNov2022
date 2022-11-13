@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField]
     private Canvas menuCanvas;
-    public int startScene = 0;
+    public string startScene;
 
     public CanvasGroup controlls;
     public CanvasGroup credits;
