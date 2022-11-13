@@ -16,7 +16,21 @@ public class FightSystem : MonoBehaviour
     public AudioSource music;
     private bool playedMusic = false;
 
-    public bool startPlaying;
+    public bool startPlaying
+    {
+        set
+        {
+            if (!_startPlaying)
+            {
+                _startPlaying = value;
+                scroller.isRunning = value;
+                startTime = Time.time;
+            }
+        }
+        get => _startPlaying;
+    }
+
+    public bool _startPlaying;
 
     public BeatScroller scroller;
 
@@ -59,13 +73,21 @@ public class FightSystem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     
     private Animator FightAnimator;
+    
+    [HideInInspector]
+    public string winLevel;
 
     public float currentTime => Time.time - startTime;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
         FightAnimator = GetComponent<Animator>();
-        instance = this;
+        
         playerSprite = new List<Sprite>(battle.player.sprites);
         lookTowardList = new List<LookTowards>();
         setSpriteList = new List<SetSprite>();
@@ -96,7 +118,6 @@ public class FightSystem : MonoBehaviour
     private void Update()
     {
 
-        
         scoreText.text = 
             "Score: " + Math.Round(currentScore * 100F) / 100F + "\n" +
             "Multiplier: " + Math.Round(multiplier * 10F) / 10F;
@@ -105,14 +126,8 @@ public class FightSystem : MonoBehaviour
         scoreText.fontSize = 39F + beatSizer * 3F;
         enemyImage.transform.localScale = new Vector3(1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F);
         playerImage.transform.localScale = new Vector3(1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F);
-        
-        if (!startPlaying)
-        {
-            startPlaying = true;
-            scroller.isRunning = true;
-            startTime = Time.time;
-        }
-        else
+
+        if(startPlaying)
         {
             if (currentTime > (warmupTime * scroller.beatTempo) && !playedMusic)
             {
@@ -132,6 +147,11 @@ public class FightSystem : MonoBehaviour
         if (health <= 0)
         {
             Loose();
+        }
+
+        if (scroller.transform.childCount == 0)
+        {
+            Win();
         }
     }
 
@@ -232,6 +252,11 @@ public class FightSystem : MonoBehaviour
         niceSound.Play();
     }
 
+    private void Win()
+    {
+        SceneManager.LoadSceneAsync(winLevel, LoadSceneMode.Single);
+    }
+    
     private void Loose()
     {
         SceneManager.LoadSceneAsync("Gameover", LoadSceneMode.Single);

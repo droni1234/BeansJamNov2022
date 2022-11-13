@@ -8,16 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3f3495f3c9949874fbcdd3609f94be17
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DiscoRoom.unity
     guid: 611450b5e5bae5d4d91e5d9806638519
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ToiletteRoom.unity
     guid: 44a17d9d1e984c94e99ae92ee3ce9409
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EingangRoom.unity
     guid: d067593e13a366642907f7dd312e73f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VipRoom.unity
     guid: 5700a38bdd785f345bd76db52669f589
+  - enabled: 1
+    path: Assets/Scenes/Fight.unity
+    guid: f12064b1f5b757a41b359b993e4b410c
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 70b288a5cc74b594b98a809dec34c7a7
   m_configObjects: {}

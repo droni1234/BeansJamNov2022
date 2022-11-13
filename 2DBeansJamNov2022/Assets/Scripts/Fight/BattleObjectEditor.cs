@@ -254,19 +254,23 @@ public class BattleObjectEditor : Editor
             selectedSprites = script.enemy.sprites;
 
         GUILayout.BeginHorizontal();
-        for (var i = 0; i < selectedSprites.Length; i++)
+        if (selectedSprites != null)
         {
-            var pressed = GUILayout.Button(selectedSprites[i].texture, GUILayout.MaxHeight(preview_Size),
-                GUILayout.MaxWidth(preview_Size));
-            if (pressed)
+                
+            for (var i = 0; i < selectedSprites.Length; i++)
             {
-                script.addSprite(pointer, charSelection, i);
-            }
+                var pressed = GUILayout.Button(selectedSprites[i].texture, GUILayout.MaxHeight(preview_Size),
+                    GUILayout.MaxWidth(preview_Size));
+                if (pressed)
+                {
+                    script.addSprite(pointer, charSelection, i);
+                }
 
-            if (i % spriteDivider == 3)
-            {
-                GUILayout.EndHorizontal();
-                GUILayout.BeginHorizontal();
+                if (i % spriteDivider == 3)
+                {
+                    GUILayout.EndHorizontal();
+                    GUILayout.BeginHorizontal();
+                }
             }
         }
 
