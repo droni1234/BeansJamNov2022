@@ -314,13 +314,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: "Wenn ich du w\xE4re, w\xFCrde ich nicht aufs Klo gehen hier!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: f2e55f981ae538c46b2798b601e15fbf, type: 3}
   - actorID: 0
     message: Nun...die Klodeckel sind alle kaputt, kein Plan wieso?!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 4446828431ff45a46ae9b5310eab8ae7, type: 3}
   - actorID: 0
     message: Was hast du gesagt? Rote Bete? Das reicht! Dance Battle, los!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 5ab1d252372fc2b43b66bd873be24d96, type: 3}
   actors:
   - name: Nils
     sprite: {fileID: 21300000, guid: 4e80278b703e84841ac649a1c7c3c2e1, type: 3}
@@ -611,13 +611,13 @@ MonoBehaviour:
   - actorID: 0
     message: Warum siehst du mich so an? Hast du noch nie eine Frau mit dicken Lippen
       gesehen?
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 5dcce53f7fbe9a94cb1729df6d3185ca, type: 3}
   - actorID: 0
     message: "Ich habe heute einfach zuuuu viel K\xE4se gegessen, verstehst du?"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 8767a951f25795a4b81c24e8b30f9072, type: 3}
   - actorID: 0
     message: "Nat\xFCrlich k\xF6nnen wir tanzen, Liebchen! Los geht's!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 4b3b37b57ae120c4b8d56de65b3cf895, type: 3}
   actors:
   - name: Simon
     sprite: {fileID: 21300000, guid: b24fc734d389b2c45bbc306bb766adc5, type: 3}
@@ -1877,10 +1877,10 @@ MonoBehaviour:
     ton: {fileID: 0}
   - actorID: 0
     message: Ich bin das erste Mal hier!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 298b77f3d9977a744967e88a5ed40be5, type: 3}
   - actorID: 0
     message: "Es macht so Spa\xDF die ganze Nacht zu tanzen!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 8a310cb595e51b742bcda95632d60f75, type: 3}
   actors:
   - name: Lea
     sprite: {fileID: 21300000, guid: 6b30cdd432ec3b943945b1135ac37bef, type: 3}
@@ -3308,13 +3308,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: "Sch\xE4tzchen, du bist wieder hier?"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: d2e6d3a2f95abf04593640a6dc513ad4, type: 3}
   - actorID: 0
     message: "Du bist genau wie Erdbeermarmelade, viel zu s\xFC\xDF!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 088a70f374ba5784da4ce1ab8d1427ba, type: 3}
   - actorID: 0
-    message: Und jetzt tanze, diesmal bitte mit Skill!
-    ton: {fileID: 0}
+    message: Na dann, lass uns tanzen, diesmal bitte mit Skill!
+    ton: {fileID: 8300000, guid: e802fceef6861d54598b1db5de82d0ac, type: 3}
   actors:
   - name: Simon
     sprite: {fileID: 21300000, guid: b24fc734d389b2c45bbc306bb766adc5, type: 3}
@@ -4610,16 +4610,16 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: "Yare Yare Daze\u2026"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: ecd476e4f054ba943b1ccef742c30a20, type: 3}
   - actorID: 0
     message: Du wirst nie gegen meine Jojo Poses ankommen!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: b0b7168c509879d47be15e84b7dc86d8, type: 3}
   - actorID: 0
     message: Ich habe als studierter Weeb jahrelang meinen Stand traniert!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 3c38cc79b0e8a4c4aa8401e1a91a8e8e, type: 3}
   - actorID: 0
     message: Za Warudo!!!!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 3af559ba2a8027949a70d2e4c0c6b4da, type: 3}
   actors:
   - name: Droni
     sprite: {fileID: 21300000, guid: b3e282fe2bf413b4fa7dd3d022a478b9, type: 3}
@@ -5697,13 +5697,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Du bist schon wieder hier?
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 808ce7eb338d2434c861404c1e7571ce, type: 3}
   - actorID: 0
     message: Na, wenn du meinst!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: ac4c00e57afa5774cba7f18220e990c0, type: 3}
   - actorID: 0
     message: By the power of the beans, let's go!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 66c13d2537d8d2a4ca872eb16b773876, type: 3}
   actors:
   - name: Nils
     sprite: {fileID: 21300000, guid: 4e80278b703e84841ac649a1c7c3c2e1, type: 3}
