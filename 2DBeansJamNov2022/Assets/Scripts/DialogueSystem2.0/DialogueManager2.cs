@@ -22,16 +22,19 @@ public class DialogueManager2 : MonoBehaviour
     public static bool isActive = false;
     public static DialogueManager2 instance;
 
+    private CanvasGroup chatboxCanvasGroup;
+
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
 
         animator.SetBool("IsOpen", true);
+        chatboxCanvasGroup.alpha = 1F;
+        chatboxCanvasGroup.blocksRaycasts = true;
         currentMessage = messages;
         currentActors = actors;
         activeMessage = 0;
         isActive = true;
 
-        Debug.Log("Started conversation! Loaded messages: " + messages.Length);
         DisplayMessage();
         
     }
@@ -53,12 +56,11 @@ public class DialogueManager2 : MonoBehaviour
     public void NextMessage()
     {
         activeMessage++;
-        if(activeMessage < currentMessage.Length)
+        if(activeMessage < currentMessage?.Length)
         {
             DisplayMessage();
         } else
         {
-            Debug.Log("Conversation ended!");
             isActive = false;
             EndDialogue();
         }
@@ -67,6 +69,7 @@ public class DialogueManager2 : MonoBehaviour
     private void Awake() 
     {
         DialogueManager2.instance = this;
+        chatboxCanvasGroup = GetComponent<CanvasGroup>();
     }
     // Start is called before the first frame update
     void Start()
@@ -76,7 +79,7 @@ public class DialogueManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isActive == true)
+        if (Input.GetButtonDown("Fire1") && isActive == true)
         {
             NextMessage();
         }
@@ -85,6 +88,8 @@ public class DialogueManager2 : MonoBehaviour
     void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false);
+        chatboxCanvasGroup.alpha = 0F;
+        chatboxCanvasGroup.blocksRaycasts = false;
 	}
 
 }
