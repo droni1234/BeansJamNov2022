@@ -17,9 +17,15 @@ MonoBehaviour:
   warmup: 4
   audio: {fileID: 8300000, guid: 8494fb1a3ed368a4e887179bf85b0cad, type: 3}
   enemy:
-    sprites: []
+    sprites:
+    - {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
+    - {fileID: 21300000, guid: 73475ee11f0e19147b78c72f8658b853, type: 3}
+    - {fileID: 21300000, guid: 64b3c81401d55a144b9f483364ae0c18, type: 3}
+    - {fileID: 21300000, guid: c8a48fde8e11d4c4f9d94b35670f8ae5, type: 3}
   player:
-    sprites: []
+    sprites:
+    - {fileID: 21300000, guid: e27746bf406c83340825787e89cd5718, type: 3}
+    - {fileID: 21300000, guid: b5f17f1d484d9954099fa75beb08ebb8, type: 3}
   notes:
   - time: 0
     key: 0
@@ -329,5 +335,60 @@ MonoBehaviour:
     key: 1
   - time: 153
     key: 2
-  looks: []
-  sprites: []
+  - time: 154
+    key: 3
+  - time: 155
+    key: 0
+  - time: 156
+    key: 2
+  - time: 157
+    key: 1
+  - time: 158
+    key: 3
+  - time: 159
+    key: 3
+  - time: 160
+    key: 3
+  - time: 161
+    key: 3
+  - time: 162
+    key: 1
+  - time: 163
+    key: 2
+  - time: 164
+    key: 0
+  - time: 165
+    key: 0
+  - time: 166
+    key: 1
+  - time: 167
+    key: 1
+  - time: 168
+    key: 0
+  - time: 169
+    key: 0
+  - time: 170
+    key: 2
+  looks:
+  - time: 8
+    lookTowards: 1
+  - time: 16
+    lookTowards: 0
+  - time: 24
+    lookTowards: 2
+  sprites:
+  - time: 2
+    type: 1
+    spriteIndex: 0
+  - time: 4
+    type: 1
+    spriteIndex: 1
+  - time: 6
+    type: 1
+    spriteIndex: 2
+  - time: 8
+    type: 1
+    spriteIndex: 3
+  - time: 16
+    type: 0
+    spriteIndex: 1
