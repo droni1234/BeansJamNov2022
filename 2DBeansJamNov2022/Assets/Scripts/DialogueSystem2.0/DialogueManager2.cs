@@ -12,6 +12,8 @@ public class DialogueManager2 : MonoBehaviour
     public TextMeshProUGUI messageText;
     public Image textBox;
 
+    public Animator animator;
+
     Message[] currentMessage;
     Actor[] currentActors;
     int activeMessage = 0;
@@ -20,6 +22,8 @@ public class DialogueManager2 : MonoBehaviour
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
+
+        animator.SetBool("IsOpen", true);
         currentMessage = messages;
         currentActors = actors;
         activeMessage = 0;
@@ -51,6 +55,7 @@ public class DialogueManager2 : MonoBehaviour
         {
             Debug.Log("Conversation ended!");
             isActive = false;
+            EndDialogue();
         }
     }
 
@@ -71,4 +76,10 @@ public class DialogueManager2 : MonoBehaviour
             NextMessage();
         }
     }
+
+    void EndDialogue()
+	{
+		animator.SetBool("IsOpen", false);
+	}
+
 }
