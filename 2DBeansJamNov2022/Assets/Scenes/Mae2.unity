@@ -2723,7 +2723,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
     ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
   - name: Budi
-    sprite: {fileID: 21300000, guid: 5d3238d091d67ad46a8c8cf9e8bc3eb2, type: 3}
+    sprite: {fileID: 21300000, guid: 9b57d120d4aa94d4aa62822cc12e2bc6, type: 3}
     ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
 --- !u!114 &1139058673
 MonoBehaviour:
@@ -3751,7 +3751,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
     ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
   - name: Budi
-    sprite: {fileID: 21300000, guid: 5d3238d091d67ad46a8c8cf9e8bc3eb2, type: 3}
+    sprite: {fileID: 21300000, guid: 9b57d120d4aa94d4aa62822cc12e2bc6, type: 3}
     ui: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
 --- !u!114 &1379980498
 MonoBehaviour:
@@ -4603,17 +4603,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorID: 0
-    message: Hello!
-    ton: {fileID: 8300000, guid: 2d39c69bea02dc84091df5b1e9756c35, type: 3}
-  - actorID: 0
-    message: Party Time!
+    message: "Moin, du m\xFCder Mitmensch!"
     ton: {fileID: 0}
   - actorID: 0
-    message: "Let\xB4s go!"
+    message: Normalerweise geh ich nicht feiern...
+    ton: {fileID: 0}
+  - actorID: 0
+    message: "wei\xDFt du, ich bin n\xE4mlich Informatiker."
     ton: {fileID: 0}
   actors:
   - name: Droni
-    sprite: {fileID: 21300000, guid: b5f17f1d484d9954099fa75beb08ebb8, type: 3}
+    sprite: {fileID: 21300000, guid: b3e282fe2bf413b4fa7dd3d022a478b9, type: 3}
     ui: {fileID: 21300000, guid: d95a3df482803454890ba2100d34b088, type: 3}
 --- !u!114 &1711695074
 MonoBehaviour:
