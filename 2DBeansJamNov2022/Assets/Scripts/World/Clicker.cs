@@ -12,10 +12,10 @@ public class Clicker : MonoBehaviour
     
     //Animator
     public Animator transitionAnim;
+    public Animator musicAnim;
     public float transitionTime = 0;
 
-    //Sound
-    [SerializeField] private AudioSource walk;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -113,6 +113,7 @@ public class Clicker : MonoBehaviour
     IEnumerator LoadLevel(int levelIndex)
             {
                 transitionAnim.SetTrigger("end");
+                musicAnim.SetTrigger("FadeOut");
                 yield return new WaitForSeconds(transitionTime);
                 SceneManager.LoadScene(levelIndex);
                 
