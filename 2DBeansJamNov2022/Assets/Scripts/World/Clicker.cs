@@ -93,24 +93,25 @@ public class Clicker : MonoBehaviour
 
     public void LoadDisco()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex / SceneManager.GetActiveScene().buildIndex ));
+        StartCoroutine(LoadLevel("DiscoRoom"));
+        print("Load");
     }
 
     public void LoadToilette()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 ));
+        StartCoroutine(LoadLevel("ToiletteRoom"));
     }
 
     public void LoadEingang()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 2 ));
+        StartCoroutine(LoadLevel("EingangRoom"));
     }
     public void LoadVip()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 3 ));
+        StartCoroutine(LoadLevel("VipRoom"));
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    IEnumerator LoadLevel(string levelIndex)
             {
                 transitionAnim.SetTrigger("end");
                 musicAnim.SetTrigger("FadeOut");
