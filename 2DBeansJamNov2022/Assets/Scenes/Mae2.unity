@@ -907,13 +907,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: "Hey, du siehst ja total m\xFCde aus?!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 8926604e03bb32e458e40eb82750e5d8, type: 3}
   - actorID: 0
     message: Du musst dir das ansehen, ich bin total aufgeregt!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 4570a6ed9a6f74442b7944d8f71eb4b3, type: 3}
   - actorID: 0
     message: Die RocketBeans sind hier, wie cool ist das denn?
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: e3347d4671a49e14aa60e4745282694e, type: 3}
   actors:
   - name: Syril
     sprite: {fileID: 0}
@@ -2711,13 +2711,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Hm? Wer ist da? Verdammt, ich hab meine Kontaktlinsen nicht drin.
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: fd471e16334563d43b7a3727aa7e2e63, type: 3}
   - actorID: 0
     message: Achsoo..du willst tanzen? Sag das doch gleich!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 230abd0cdd3cdba4784e60aff75a7484, type: 3}
   - actorID: 1
     message: Sieh dir an, wie gut ich mit meinen Scheren tanzen kann!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 70b57c224eb89ac4c9a65e49adb3cdff, type: 3}
   actors:
   - name: Budi
     sprite: {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
@@ -3147,13 +3147,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Ich hab dir gesagt, du kommst nicht in den VIP Bereich!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 734eaf002ec5ba94c8335433ca40191a, type: 3}
   - actorID: 0
     message: Du kannst nicht ankommen gegen MC Peinlich!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: cc63cb6649ca0f44f89e149fede54554, type: 3}
   - actorID: 0
     message: Du willst es wirklich wissen? Ich verpass dir meine Linke!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: f79b3ffca28dbbf49b189fad3deaf534, type: 3}
   actors:
   - name: Eddy
     sprite: {fileID: 21300000, guid: 083d6c11a94367e46af2caba9ab21d06, type: 3}
@@ -3739,13 +3739,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: "Willst du nochmal meine Scheren sp\xFCren?"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 776d08d118df48e4488dfea67f2436fb, type: 3}
   - actorID: 0
     message: Ja, wenn du nicht anders willst?
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 4207b5d28445a56488153128f0cd56f9, type: 3}
   - actorID: 1
     message: "Sp\xFCre meinen Dorn, ich bin so gut in Form!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: d224eaa6b9649834fa89d643a9f290bc, type: 3}
   actors:
   - name: Budi
     sprite: {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
@@ -4173,13 +4173,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Geht's dir gut?
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 90db18cfecf4e5647887fff1f37cba2d, type: 3}
   - actorID: 0
     message: "Du siehst so m\xFCde aus!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 4d4fb5b5f2afeb44295cb7408989c1aa, type: 3}
   - actorID: 0
     message: Schau mal! Ein Foto von meiner Katze!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: ca6232870ce37d24d9f48841998f1e2e, type: 3}
   - actorID: 0
     message: Miau
     ton: {fileID: 0}
@@ -4188,7 +4188,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 86df93e34a311c446b59155154e7efe4, type: 3}
     ui: {fileID: 21300000, guid: 457b60269cdcf304ab2e69fd79e49863, type: 3}
   - name: Katze
-    sprite: {fileID: 21300000, guid: 86df93e34a311c446b59155154e7efe4, type: 3}
+    sprite: {fileID: 21300000, guid: 7ac54249548c6c648b95f27f185f7d34, type: 3}
     ui: {fileID: 21300000, guid: 457b60269cdcf304ab2e69fd79e49863, type: 3}
 --- !u!114 &1523180694
 MonoBehaviour:
@@ -4774,13 +4774,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Servas, I bin die Ilona!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 1fe9202b021e6d44390bb906314d5913, type: 3}
   - actorID: 0
     message: "Die Musi fetzt urdentlich, g\xF6? Is jo a vo mia!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 6a7c87ae363c8b846b5bf2c6cf87a70b, type: 3}
   - actorID: 0
     message: "Und jetzt schleich di, du Hustinettenb\xE4r!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 20655a70425f4604ebf9a07a22165106, type: 3}
   actors:
   - name: Ilona
     sprite: {fileID: 21300000, guid: b8384f3d8a328de4cb07ae397ed093d3, type: 3}
@@ -4935,13 +4935,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Ey! Was machst du hier, du Affe? Zieh ab!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: d8a3174be18ebbf4eb4ff2b4db087c87, type: 3}
   - actorID: 0
     message: VIP Bereich? Du? Ich denke nicht.
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 7239b75fc93ee32458ede9b50a99ba8d, type: 3}
   - actorID: 0
     message: "Mein zweiter Name ist 'unm\xF6glich', genau wie deine Dance Moves!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 99de18bd8b399c74b9adcafc72f4180f, type: 3}
   actors:
   - name: Eddy
     sprite: {fileID: 21300000, guid: 083d6c11a94367e46af2caba9ab21d06, type: 3}
@@ -5214,13 +5214,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Hey, dir fallen ja schon die Augen zu!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: c65b0095ed087594c8c01ccff012d1ee, type: 3}
   - actorID: 0
     message: "Komm schon, ich wei\xDF wie wir dich wachhalten."
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 19099ba9e8e9d4a4881ff1db1a3f3d5d, type: 3}
   - actorID: 0
     message: "Join mir f\xFCr ne Runde Overwatch2!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 07cfdca53bfcffc4b99582a7beafeceb, type: 3}
   actors:
   - name: Erwin
     sprite: {fileID: 21300000, guid: 6c4d93220fdba2846914e59ed4b3c620, type: 3}
@@ -5375,13 +5375,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Was will denn so ne Schlaftablette hier?
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: 209228f044afb3b4c8dca95254db4179, type: 3}
   - actorID: 0
     message: "Komm, g\xF6nn dir erstmal ne Fritz Kola!"
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: e2a1ce83662290b44a9b77845117a474, type: 3}
   - actorID: 0
     message: Ist mein Club, die geht auf's Haus!
-    ton: {fileID: 0}
+    ton: {fileID: 8300000, guid: ae9f64e7d274305438fb0b3dbab1db67, type: 3}
   actors:
   - name: Mae
     sprite: {fileID: 21300000, guid: 75c11bfcadabb304cb694dff6419f6c0, type: 3}
