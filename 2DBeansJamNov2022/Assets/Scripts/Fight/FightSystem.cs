@@ -37,30 +37,37 @@ public class FightSystem : MonoBehaviour
     public List<LookTowards> lookTowardList;
     public List<SetSprite> setSpriteList;
 
+    private Animator FightAnimator;
 
     public float currentTime => Time.time - startTime;
 
     private void Start()
     {
+        FightAnimator = GetComponent<Animator>();
         instance = this;
         playerSprite = new List<Sprite>(battle.player.sprites);
+        lookTowardList = new List<LookTowards>();
+        setSpriteList = new List<SetSprite>();
         enemySprite = new List<Sprite>(battle.enemy.sprites);
-        lookTowardList = new List<LookTowards>(battle.looks);
-        setSpriteList = new List<SetSprite>(battle.sprites);
         scroller.bpm = battle.bpm;
         scroller.speed = battle.speed;
         warmupTime = battle.warmup;
         music.clip = battle.audio;
         currentScore = 0;
         startTime = Time.time;
-        //multiplier = 1;
+        multiplier = 1;
 
         var notesCopy = battle.notes.Select(note => new Note(note)).ToList();
         notesCopy.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo * scroller.speed);
 
-    FindObjectOfType<NoteGenerator>().Generate(notesCopy);
-
+        FindObjectOfType<NoteGenerator>().Generate(notesCopy);
+        
+        lookTowardList = battle.looks.Select(look => new LookTowards(look)).ToList();
+        lookTowardList.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo);
         lookTowardList.OrderBy(x => x.time);
+
+        setSpriteList = battle.sprites.Select(_sprite => new SetSprite(_sprite)).ToList();
+        setSpriteList.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo);
         setSpriteList.OrderBy(x => x.time);
     }
 
@@ -93,7 +100,7 @@ public class FightSystem : MonoBehaviour
 
     private void CheckSetSpriteCommand(SetSprite setSprite)
     {
-        if (setSprite.time < currentTime) return;
+        if (setSprite.time * scroller.beatTempo  > currentTime) return;
         
         switch(setSprite.type)
         {
@@ -122,7 +129,7 @@ public class FightSystem : MonoBehaviour
     
     private void CheckLookAtCommand(LookTowards lookTowards)
     {
-        if (lookTowards.time < currentTime) return;
+        if (lookTowards.time * scroller.beatTempo > currentTime) return;
         
         switch (lookTowardList.First().lookTowards)
         {
@@ -141,19 +148,19 @@ public class FightSystem : MonoBehaviour
         lookTowardList.Remove(lookTowards);
     }
 
-    public void LookAtPlayer()
+    private void LookAtPlayer()
     {
-        print("looking at PLayer");
+        FightAnimator.SetTrigger("FocusPlayer");
     }
 
-    public void LookAtEnemy()
+    private void LookAtEnemy()
     {
-        print("Looking at Enemy");
+        FightAnimator.SetTrigger("FocusEnemy");
     }
 
-    public void LookAtBoth()
+    private void LookAtBoth()
     {
-        print("Looking at Both");
+        FightAnimator.SetTrigger("FocusBoth");
     }
 
 

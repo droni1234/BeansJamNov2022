@@ -9,6 +9,10 @@ public class Clicker : MonoBehaviour
     public Vector3 mousePosWorldSpace;
     public Vector2 mousePosWorldSpace2D;
     RaycastHit2D hit;
+    
+    //Animator
+    public Animator transitionAnim;
+    public float transitionTime = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,28 +50,58 @@ public class Clicker : MonoBehaviour
                     else if(hit.collider.gameObject.tag == "DiscoEingang")
                     {
                         print("Das ist die Disco");
-                        SceneManager.LoadScene("DiscoRoom");
+                        LoadDisco();
                     }
                     else if(hit.collider.gameObject.tag == "VipEingang")
                     {
                         print("Das ist die der Vip Bereich");
-                        SceneManager.LoadScene("VipRoom");
+                        LoadVip();
                     }
                     else if(hit.collider.gameObject.tag == "ToiletteEingang")
                     {
                         print("Das ist die Toilette");
-                        SceneManager.LoadScene("ToiletteRoom");
+                        LoadToilette();
                     }
                     else if(hit.collider.gameObject.tag == "EingangEingang")
                     {
                         print("Das ist der Eingang");
-                        SceneManager.LoadScene("EingangRoom");
+                        LoadEingang();
                     }
             }
             else
             {
                 print("miss");
             }
+
         }
+        
+        
     }
+
+    public void LoadDisco()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex / SceneManager.GetActiveScene().buildIndex ));
+    }
+
+    public void LoadToilette()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 ));
+    }
+
+    public void LoadEingang()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 2 ));
+    }
+    public void LoadVip()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 3 ));
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+            {
+                transitionAnim.SetTrigger("end");
+                yield return new WaitForSeconds(transitionTime);
+                SceneManager.LoadScene(levelIndex);
+            }
+
 }

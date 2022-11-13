@@ -27,6 +27,11 @@ public class BattleObject : ScriptableObject
         var time = Mathf.Round(notes.Last().time) + 1;
         notes.Add(new Note(time, (noteKey)Random.Range(0, 4)));
     }
+
+    public void addNote(float time, noteKey direction)
+    {
+        notes.Add(new Note(time, direction));
+    }
 }
 
 [Serializable]
@@ -50,6 +55,13 @@ public class Character
 [Serializable]
 public class LookTowards : Event
 {
+
+    public LookTowards(LookTowards _looktowards)
+    {
+        time = _looktowards.time;
+        lookTowards = _looktowards.lookTowards;
+    }
+    
     public POI lookTowards;
 
     public override EventType thisEventType => EventType.LookTowards;
@@ -58,6 +70,14 @@ public class LookTowards : Event
 [Serializable]
 public class SetSprite : Event
 {
+
+    public SetSprite(SetSprite setSprite)
+    {
+        this.time = setSprite.time;
+        this.type = setSprite.type;
+        this.spriteIndex = setSprite.spriteIndex;
+    }
+    
     public CharacterType type;
     public int spriteIndex;
     public override EventType thisEventType => EventType.SetSprite;
