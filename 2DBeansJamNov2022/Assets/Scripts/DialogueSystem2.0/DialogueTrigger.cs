@@ -17,6 +17,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         public int actorID;
         public string message;
+
+        public AudioClip ton;
     }
 
     [System.Serializable]

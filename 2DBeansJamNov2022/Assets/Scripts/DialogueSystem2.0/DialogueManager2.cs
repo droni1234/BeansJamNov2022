@@ -14,6 +14,8 @@ public class DialogueManager2 : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource voiceover;
+
     Message[] currentMessage;
     Actor[] currentActors;
     int activeMessage = 0;
@@ -38,11 +40,14 @@ public class DialogueManager2 : MonoBehaviour
     {
         Message messageToDisplay = currentMessage[activeMessage];
         messageText.text = messageToDisplay.message;
+        voiceover.clip = messageToDisplay.ton;
+        voiceover.Play();
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorID];
         actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
         textBox.sprite = actorToDisplay.ui;
+        
     }
 
     public void NextMessage()
