@@ -17,7 +17,11 @@ MonoBehaviour:
   warmup: 4
   audio: {fileID: 8300000, guid: d5c86f87573187f4e9966e1aa83947e5, type: 3}
   enemy:
-    sprites: []
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   player:
     sprites: []
   notes:
