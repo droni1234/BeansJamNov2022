@@ -28,14 +28,14 @@ public class Clicker : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {   
             // Test 
-            print("Maustaste is pressed");
+            //print("Maustaste is pressed");
             // Mouse Posi
             mousePosWorld = Input.mousePosition;
-            print("Screen Space" + mousePosWorld);
+            //print("Screen Space" + mousePosWorld);
             //ScreenSpace zu WorldSpace
             mousePosWorldSpace = cameraWorld.ScreenToWorldPoint(mousePosWorld);
             //WorldSpace
-            print("World Space" + mousePosWorldSpace);
+            //print("World Space" + mousePosWorldSpace);
             mousePosWorldSpace2D = new Vector2(mousePosWorldSpace.x,mousePosWorldSpace.y);
 
             // Raycast2D
@@ -43,35 +43,35 @@ public class Clicker : MonoBehaviour
 
             if(hit.collider != null)
             {
-                print("Target hit!");
+                //print("Target hit!");
 
                     if(hit.collider.gameObject.tag == "Hintergrund")
                     {
-                        print("Das ist der Hintergrund!");
+                        //print("Das ist der Hintergrund!");
                     }
 
                     else if(hit.collider.gameObject.tag == "DiscoEingang")
                     {
-                        print("Das ist die Disco");
+                        //print("Das ist die Disco");
                         
                         LoadDisco();
                         
                     }
                     else if(hit.collider.gameObject.tag == "VipEingang")
                     {
-                        print("Das ist die der Vip Bereich");
+                        //print("Das ist die der Vip Bereich");
                         
                         LoadVip();
                     }
                     else if(hit.collider.gameObject.tag == "ToiletteEingang")
                     {
-                        print("Das ist die Toilette");
+                        //print("Das ist die Toilette");
                         
                         LoadToilette();
                     }
                     else if(hit.collider.gameObject.tag == "EingangEingang")
                     {
-                        print("Das ist der Eingang");
+                        //print("Das ist der Eingang");
                         
                         LoadEingang();
                         
@@ -83,7 +83,7 @@ public class Clicker : MonoBehaviour
             }
             else
             {
-                print("miss");
+                //print("miss");
             }
 
         }
@@ -94,7 +94,7 @@ public class Clicker : MonoBehaviour
     public void LoadDisco()
     {
         StartCoroutine(LoadLevel("DiscoRoom"));
-        print("Load");
+        //print("Load");
     }
 
     public void LoadToilette()
