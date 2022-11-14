@@ -117,22 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exit Base_0
+      name: Exit Base_1
       rect:
         serializedVersion: 2
-        x: 3285
-        y: 0
-        width: 811
-        height: 499
-      alignment: 0
+        x: 1286
+        y: 781
+        width: 1064
+        height: 712
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6cf857fa1745c048884c2888450f714
-      internalID: 436097985
+      spriteID: 35a1ed52a03e0cb4f84aad6d358b7aea
+      internalID: 374476493
       vertices: []
       indices: 
       edges: []
@@ -149,6 +149,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Exit Base_0: 436097985
+      Exit Base_1: 374476493
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

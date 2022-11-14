@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField]
     private Canvas menuCanvas;
-    public int startScene = 0;
+    public string startScene;
 
     public CanvasGroup controlls;
     public CanvasGroup credits;
@@ -32,12 +32,19 @@ public class MenuController : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            credits.interactable = false;
-            credits.blocksRaycasts = false;
-            credits.alpha = 0F;
-            controlls.interactable = false;
-            controlls.blocksRaycasts = false;
-            controlls.alpha = 0F;
+            if (credits)
+            {
+                credits.interactable = false;
+                credits.blocksRaycasts = false;
+                credits.alpha = 0F;
+            }
+
+            if (controlls)
+            {
+                controlls.interactable = false;
+                controlls.blocksRaycasts = false;
+                controlls.alpha = 0F;
+            }
         }
     }
 
@@ -54,7 +61,7 @@ public class MenuController : MonoBehaviour
         credits.alpha = 1F;
     }
 
-    public void Controls()
+    public void ShowControls()
     {
         controlls.interactable = true;
         controlls.blocksRaycasts = true;

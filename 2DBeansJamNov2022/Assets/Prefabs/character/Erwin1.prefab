@@ -149,13 +149,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Hey, dir fallen ja schon die Augen zu!
-    ton: {fileID: 8300000, guid: c65b0095ed087594c8c01ccff012d1ee, type: 3}
+    ton: {fileID: 8300000, guid: 8a50a7f3edeb0104baaf84661b35131a, type: 3}
   - actorID: 0
     message: "Komm schon, ich wei\xDF wie wir dich wachhalten."
-    ton: {fileID: 8300000, guid: 19099ba9e8e9d4a4881ff1db1a3f3d5d, type: 3}
+    ton: {fileID: 8300000, guid: 8869c39732d0ea24dbfe79068587d815, type: 3}
   - actorID: 0
-    message: "Join mir f\xFCr ne Runde Overwatch2!"
-    ton: {fileID: 8300000, guid: 07cfdca53bfcffc4b99582a7beafeceb, type: 3}
+    message: "Join mir f\xFCr ne Runde Overwatch[2]!"
+    ton: {fileID: 8300000, guid: 1f0fb233658212d4b91b960567a68275, type: 3}
   actors:
   - name: Erwin
     sprite: {fileID: 21300000, guid: 6c4d93220fdba2846914e59ed4b3c620, type: 3}

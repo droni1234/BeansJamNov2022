@@ -149,13 +149,13 @@ MonoBehaviour:
   messages:
   - actorID: 0
     message: Was will denn so ne Schlaftablette hier?
-    ton: {fileID: 8300000, guid: 209228f044afb3b4c8dca95254db4179, type: 3}
+    ton: {fileID: 8300000, guid: 95d52dc149e447742b70754691a7a286, type: 3}
   - actorID: 0
     message: "Komm, g\xF6nn dir erstmal ne Fritz Kola!"
-    ton: {fileID: 8300000, guid: e2a1ce83662290b44a9b77845117a474, type: 3}
+    ton: {fileID: 8300000, guid: a7cdcae07ff6636419588e1db5ee4bac, type: 3}
   - actorID: 0
     message: Ist mein Club, die geht auf's Haus!
-    ton: {fileID: 8300000, guid: ae9f64e7d274305438fb0b3dbab1db67, type: 3}
+    ton: {fileID: 8300000, guid: e80058aa89bb6d245a2e52d7ffcdd55f, type: 3}
   actors:
   - name: Mae
     sprite: {fileID: 21300000, guid: 75c11bfcadabb304cb694dff6419f6c0, type: 3}

@@ -9,7 +9,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void StartDialogue()
     {
-        print("test");
         DialogueManager2.instance.OpenDialogue(messages, actors);
     }
 }
