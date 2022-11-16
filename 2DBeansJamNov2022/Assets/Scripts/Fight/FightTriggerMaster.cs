@@ -32,7 +32,7 @@ public class FightTriggerMaster : MonoBehaviour
         var fightSystem = GameObject.FindGameObjectWithTag("Fight").GetComponent<FightSystem>();
         fightSystem.battle = cache;
         fightSystem.winLevel = level_cache;
-        fightSystem.startPlaying = true;
+        //fightSystem.startPlaying = true;
         SceneManager.sceneLoaded -= StartFight;
         DestroyImmediate(gameObject);
     }

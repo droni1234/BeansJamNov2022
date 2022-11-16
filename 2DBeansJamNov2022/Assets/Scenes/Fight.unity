@@ -845,6 +845,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993610748968065741, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
+      propertyPath: _startPlaying
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993610748968065741, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
       propertyPath: healthDifficulty
       value: 1
       objectReference: {fileID: 0}
@@ -908,6 +912,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6993610749315928563, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6993610749417101195, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
       propertyPath: m_Type
       value: 0
@@ -915,6 +923,10 @@ PrefabInstance:
     - target: {fileID: 6993610749417101195, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993610749417101195, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993610749417101197, guid: 17ada87ba43407e4c85b44426ce805b0, type: 3}
       propertyPath: m_ConstrainProportionsScale

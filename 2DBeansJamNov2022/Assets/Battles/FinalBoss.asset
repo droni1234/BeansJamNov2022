@@ -2621,3 +2621,5 @@ MonoBehaviour:
   - time: 317
     type: 1
     spriteIndex: 0
+  pointer: 8
+  denominator: 0

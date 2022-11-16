@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
   m_Name: Battle
   m_EditorClassIdentifier: 
-  bpm: 144
-  speed: 10
+  bpm: 2555
+  speed: 6346
   warmup: 8
   audio: {fileID: 8300000, guid: 1b9233d8216b2a94e9357440420a9456, type: 3}
   enemy:
@@ -63,3 +63,5 @@ MonoBehaviour:
   - time: 20
     type: 1
     spriteIndex: 1
+  pointer: 0
+  denominator: 0

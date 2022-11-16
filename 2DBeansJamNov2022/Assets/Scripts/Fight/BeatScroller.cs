@@ -13,7 +13,7 @@ public class BeatScroller : MonoBehaviour
     {
         set {
             _bpm = value;
-            beatTempo = 1 / (_bpm / 60);
+            beatTempo = 1F / (_bpm / 60F);
         }
         get => _bpm;
     }
@@ -30,6 +30,6 @@ public class BeatScroller : MonoBehaviour
             return;
         }
 
-        transform.position += Vector3.down * (Time.fixedDeltaTime * speed);
+        //transform.position += Vector3.down * (Time.fixedDeltaTime * speed);
     }
 }

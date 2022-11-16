@@ -26,6 +26,8 @@ public class DialogueManager2 : MonoBehaviour
 
     private CanvasGroup chatboxCanvasGroup;
 
+    private IEnumerator messagePrinter;
+
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
 
@@ -37,22 +39,52 @@ public class DialogueManager2 : MonoBehaviour
         activeMessage = 0;
         isActive = true;
         fight = null;
-        DisplayMessage();
+        DelayFirstMessage();
         
+    }
+
+
+    void DelayFirstMessage()
+    {
+        Message messageToDisplay = currentMessage[activeMessage];
+        //messageText.text = messageToDisplay.message;
+        voiceover.clip = messageToDisplay.ton;
+        voiceover.PlayDelayed(0.5F);
+
+        Actor actorToDisplay = currentActors[messageToDisplay.actorID];
+        StopCoroutine(messagePrinter);
+        messagePrinter = fillBox(messageToDisplay.message, 0.05F);
+        StartCoroutine(messagePrinter);
+        actorName.text = actorToDisplay.name;
+        actorImage.sprite = actorToDisplay.sprite;
+        textBox.sprite = actorToDisplay.ui;
     }
 
     void DisplayMessage()
     {
         Message messageToDisplay = currentMessage[activeMessage];
-        messageText.text = messageToDisplay.message;
+        //messageText.text = messageToDisplay.message;
         voiceover.clip = messageToDisplay.ton;
         voiceover.Play();
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorID];
+        StopCoroutine(messagePrinter);
+        messagePrinter = fillBox(messageToDisplay.message, 0.05F);
+        StartCoroutine(messagePrinter);
         actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
         textBox.sprite = actorToDisplay.ui;
         
+    }
+
+    IEnumerator fillBox(string text, float delay)
+    {
+        messageText.text = "";
+        foreach (var c in text)
+        {
+            messageText.text += c;
+            yield return new WaitForSeconds(delay);
+        } 
     }
 
     public void NextMessage()
@@ -72,6 +104,7 @@ public class DialogueManager2 : MonoBehaviour
     {
         DialogueManager2.instance = this;
         chatboxCanvasGroup = GetComponent<CanvasGroup>();
+        messagePrinter = fillBox(null, 0);
     }
     // Start is called before the first frame update
     void Start()

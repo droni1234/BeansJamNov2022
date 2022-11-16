@@ -100,11 +100,9 @@ public class FightSystem : MonoBehaviour
         currentScore = 0;
         startTime = Time.time;
         multiplier = 1;
-        setPlayerSprite(0);
-        setEnemySprite(0);
 
         var notesCopy = battle.notes.Select(note => new Note(note)).ToList();
-        notesCopy.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo * scroller.speed);
+        //notesCopy.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo * scroller.speed);
 
         FindObjectOfType<NoteGenerator>().Generate(notesCopy);
         
@@ -115,20 +113,25 @@ public class FightSystem : MonoBehaviour
         setSpriteList = battle.sprites.Select(_sprite => new SetSprite(_sprite)).ToList();
         setSpriteList.ForEach(x => x.time = (x.time + warmupTime) * scroller.beatTempo);
         setSpriteList.OrderBy(x => x.time);
-        
+
+        if (battle)
+        {
+            startPlaying = true;
+        }
     }
 
     private void FixedUpdate()
     {
-
-        scoreText.text = 
+        scoreText.text =
             "Score: " + Math.Round(currentScore * 100F) / 100F + "\n" +
-            "Multiplier: " + Math.Round(multiplier * 10F) / 10F;
+            "Multiplier: " + Math.Round(multiplier * 10F) / 10F + "\n"+
+            "Time: " + Math.Round(currentTime*100F)/100F;
 
-        float beatSizer = currentTime * 100F % (scroller.beatTempo * 100F) / 100F;
+    float beatSizer = currentTime * 100F % (scroller.beatTempo * 100F) / 100F;
         scoreText.fontSize = 39F + beatSizer * 3F;
         enemyImage.transform.localScale = new Vector3(1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F);
         playerImage.transform.localScale = new Vector3(1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F);
+        health -=  Time.fixedDeltaTime / 100F * healthDifficulty;
 
         if(startPlaying)
         {
@@ -145,7 +148,7 @@ public class FightSystem : MonoBehaviour
         if (setSpriteList.Count > 0)
             CheckSetSpriteCommand(setSpriteList.First());
 
-        health -=  Time.fixedDeltaTime / 100F * healthDifficulty;
+        
         cameraDeath.PlayInFixedTime(0,0, 1F - health);
         if (health <= 0)
         {
@@ -179,12 +182,28 @@ public class FightSystem : MonoBehaviour
 
     private void setPlayerSprite(int spriteIndex)
     {
-        playerImage.sprite = playerSprite[spriteIndex];
+        if (playerSprite[spriteIndex])
+        {
+            playerImage.sprite = playerSprite[spriteIndex];
+            playerImage.color = Color.white;        
+        }
+        else
+        {
+            enemyImage.color = Color.clear;
+        }
     }
     
     private void setEnemySprite(int spriteIndex)
     {
-        enemyImage.sprite = enemySprite[spriteIndex];
+        if (enemySprite[spriteIndex])
+        {
+            enemyImage.sprite = enemySprite[spriteIndex];
+            enemyImage.color = Color.white;
+        }
+        else
+        {
+            enemyImage.color = Color.clear;
+        }
     }
     
     private void CheckLookAtCommand(LookTowards lookTowards)
