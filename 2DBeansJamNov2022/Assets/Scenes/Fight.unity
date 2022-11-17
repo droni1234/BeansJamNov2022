@@ -460,7 +460,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 10
   blendDistance: 0
-  weight: 0
+  weight: 1
   sharedProfile: {fileID: 11400000, guid: e7e68561f69a2af459b888972be59b77, type: 2}
 --- !u!95 &1102384920
 Animator:

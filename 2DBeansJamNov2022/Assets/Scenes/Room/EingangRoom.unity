@@ -805,6 +805,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: ...was wie?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[4].message
+      value: "Dir gefallen meine Boxer, \xF6hhh wie Nett."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[5].message
+      value: "Ach komm ich habe gerade eh keine Zeit deine Moves durchzuchecken,
+        ich muss n\xE4mlich tun was ein Schrank so macht, da bleibt nicht viel Zeit
+        f\xFCrs EINSCHR\xC4NKEN."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[6].message
+      value: "Und das Einschr\xE4nken ist hier nicht mein Job."
+      objectReference: {fileID: 0}
     - target: {fileID: 9108529574665902580, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -878,6 +900,18 @@ PrefabInstance:
     - target: {fileID: 9081916289027832250, guid: 3522dc6766c8fa64b8376feeb7e8b4f0, type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081916289178736292, guid: 3522dc6766c8fa64b8376feeb7e8b4f0, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081916289178736292, guid: 3522dc6766c8fa64b8376feeb7e8b4f0, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081916289178736292, guid: 3522dc6766c8fa64b8376feeb7e8b4f0, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9081916289178736293, guid: 3522dc6766c8fa64b8376feeb7e8b4f0, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2093,7 +2127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

@@ -46,12 +46,8 @@ MonoBehaviour:
     key: 1
   - time: 6.25
     key: 1
-  - time: 7
-    key: 2
-  - time: 7.5
-    key: 2
   - time: 8
-    key: 2
+    key: 3
   - time: 8.75
     key: 3
   - time: 9.5
@@ -59,8 +55,6 @@ MonoBehaviour:
   - time: 10.25
     key: 3
   - time: 11
-    key: 3
-  - time: 11.5
     key: 3
   - time: 12
     key: 2
@@ -404,6 +398,16 @@ MonoBehaviour:
     key: 1
   - time: 187
     key: 2
+  - time: 3.25
+    key: 0
+  - time: 3.5
+    key: 0
+  - time: 7
+    key: 1
+  - time: 7.25
+    key: 1
+  - time: 11.25
+    key: 3
   looks:
   - time: 0
     lookTowards: 0
@@ -489,5 +493,5 @@ MonoBehaviour:
   - time: 187
     type: 1
     spriteIndex: 2
-  pointer: 3
+  pointer: 8
   denominator: 8

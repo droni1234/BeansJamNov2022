@@ -12,15 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
   m_Name: BossEins
   m_EditorClassIdentifier: 
-  bpm: 0
-  speed: 0
-  warmup: 0
-  audio: {fileID: 0}
+  bpm: 145
+  warmup: 8
   enemy:
-    sprites: []
+    sprites:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 4e80278b703e84841ac649a1c7c3c2e1, type: 3}
+    - {fileID: 21300000, guid: b3b297cf09cee9a4e917a14fc9218aeb, type: 3}
+    - {fileID: 21300000, guid: c839d54194b4ec84bb0c44b3325f53c5, type: 3}
+    - {fileID: 21300000, guid: fd6542b4ff82f604ca6456f738067f94, type: 3}
   player:
     sprites: []
-  notes: 
+  audio: {fileID: 8300000, guid: 1b9233d8216b2a94e9357440420a9456, type: 3}
+  speed: 5
+  healthAmount: 10
+  healthRestore: 2
+  healthLoss: 1
+  notes:
   - time: 10
     key: 1
   - time: 12
@@ -93,5 +101,168 @@ MonoBehaviour:
     key: 0
   - time: 66.5
     key: 1
-  looks: []
-  sprites: []
+  - time: 80
+    key: 0
+  - time: 81
+    key: 3
+  - time: 82
+    key: 3
+  - time: 83
+    key: 0
+  - time: 84
+    key: 3
+  - time: 88
+    key: 3
+  - time: 89
+    key: 0
+  - time: 90
+    key: 0
+  - time: 91
+    key: 3
+  - time: 92
+    key: 2
+  - time: 96
+    key: 0
+  - time: 97
+    key: 3
+  - time: 98
+    key: 3
+  - time: 99
+    key: 0
+  - time: 100
+    key: 3
+  - time: 104
+    key: 3
+  - time: 105
+    key: 3
+  - time: 106
+    key: 0
+  - time: 107
+    key: 3
+  - time: 108
+    key: 0
+  - time: 112
+    key: 3
+  - time: 113
+    key: 2
+  - time: 114
+    key: 1
+  - time: 115
+    key: 0
+  - time: 116
+    key: 3
+  - time: 117
+    key: 2
+  - time: 118
+    key: 3
+  - time: 119
+    key: 2
+  - time: 120
+    key: 3
+  - time: 121
+    key: 2
+  - time: 122
+    key: 1
+  - time: 123
+    key: 0
+  - time: 124
+    key: 1
+  - time: 125
+    key: 0
+  - time: 126
+    key: 1
+  - time: 127
+    key: 0
+  - time: 128
+    key: 3
+  - time: 129
+    key: 2
+  - time: 130
+    key: 1
+  - time: 131
+    key: 0
+  - time: 132
+    key: 3
+  - time: 133
+    key: 2
+  - time: 134
+    key: 3
+  - time: 135
+    key: 2
+  - time: 136
+    key: 3
+  - time: 137
+    key: 2
+  - time: 138
+    key: 1
+  - time: 139
+    key: 0
+  - time: 140
+    key: 1
+  - time: 141
+    key: 0
+  - time: 142
+    key: 1
+  - time: 143
+    key: 0
+  - time: 144
+    key: 3
+  - time: 146
+    key: 3
+  - time: 148
+    key: 2
+  - time: 152
+    key: 2
+  - time: 154
+    key: 2
+  - time: 156
+    key: 1
+  - time: 160
+    key: 1
+  - time: 162
+    key: 1
+  - time: 164
+    key: 2
+  - time: 168
+    key: 1
+  - time: 170
+    key: 1
+  - time: 172
+    key: 0
+  - time: 180
+    key: 0
+  - time: 180
+    key: 1
+  - time: 180
+    key: 2
+  - time: 180
+    key: 3
+  - time: 190
+    key: 1
+  - time: 190
+    key: 2
+  looks:
+  - time: 0
+    lookTowards: 0
+  - time: 10
+    lookTowards: 1
+  - time: 180
+    lookTowards: 0
+  sprites:
+  - time: 10
+    type: 1
+    spriteIndex: 1
+  - time: 48
+    type: 1
+    spriteIndex: 3
+  - time: 102
+    type: 1
+    spriteIndex: 4
+  - time: 112
+    type: 1
+    spriteIndex: 3
+  - time: 180
+    type: 1
+    spriteIndex: 2
+  pointer: 0
+  denominator: 3

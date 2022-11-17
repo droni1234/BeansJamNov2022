@@ -13,19 +13,22 @@ MonoBehaviour:
   m_Name: BossZwei
   m_EditorClassIdentifier: 
   bpm: 150
-  speed: 15
   warmup: 4
-  audio: {fileID: 8300000, guid: 8494fb1a3ed368a4e887179bf85b0cad, type: 3}
   enemy:
     sprites:
+    - {fileID: 0}
     - {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
-    - {fileID: 21300000, guid: 73475ee11f0e19147b78c72f8658b853, type: 3}
-    - {fileID: 21300000, guid: 64b3c81401d55a144b9f483364ae0c18, type: 3}
-    - {fileID: 21300000, guid: c8a48fde8e11d4c4f9d94b35670f8ae5, type: 3}
+    - {fileID: 21300000, guid: 6e55a780bf460414a861ad22f48d9326, type: 3}
+    - {fileID: 21300000, guid: 86c722086e7da3b4584464f798212592, type: 3}
+    - {fileID: 21300000, guid: 9b57d120d4aa94d4aa62822cc12e2bc6, type: 3}
   player:
     sprites:
-    - {fileID: 21300000, guid: e27746bf406c83340825787e89cd5718, type: 3}
-    - {fileID: 21300000, guid: b5f17f1d484d9954099fa75beb08ebb8, type: 3}
+    - {fileID: 0}
+  audio: {fileID: 8300000, guid: 06dd80e1b5202054fa2ccc561fc502ca, type: 3}
+  speed: 10
+  healthAmount: 10
+  healthRestore: 2
+  healthLoss: 1
   notes:
   - time: 3
     key: 1
@@ -176,6 +179,10 @@ MonoBehaviour:
     lookTowards: 0
   - time: 24
     lookTowards: 2
+  - time: 26
+    lookTowards: 0
+  - time: 34
+    lookTowards: 1
   sprites:
   - time: 2
     type: 1
@@ -183,29 +190,17 @@ MonoBehaviour:
   - time: 4
     type: 1
     spriteIndex: 1
-  - time: 6
-    type: 1
-    spriteIndex: 2
   - time: 8
     type: 1
     spriteIndex: 3
-  - time: 16
-    type: 0
-    spriteIndex: 1
-  - time: 50
-    type: 0
-    spriteIndex: 0
-  - time: 52
-    type: 0
-    spriteIndex: 1
-  - time: 53
-    type: 0
-    spriteIndex: 1
-  - time: 63
-    type: 0
-    spriteIndex: 1
-  - time: 63
-    type: 0
-    spriteIndex: 0
-  pointer: 0
-  denominator: 0
+  - time: 34
+    type: 1
+    spriteIndex: 4
+  - time: 30
+    type: 1
+    spriteIndex: 3
+  - time: 70
+    type: 1
+    spriteIndex: 2
+  pointer: 70
+  denominator: 3

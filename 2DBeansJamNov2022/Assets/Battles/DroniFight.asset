@@ -32,9 +32,9 @@ MonoBehaviour:
   healthLoss: 0.8
   notes:
   - time: 24
-    key: 3
+    key: 2
   - time: 25
-    key: 0
+    key: 1
   - time: 26
     key: 2
   - time: 27
@@ -48,9 +48,9 @@ MonoBehaviour:
   - time: 31
     key: 1
   - time: 32
-    key: 3
+    key: 2
   - time: 33
-    key: 0
+    key: 1
   - time: 34
     key: 2
   - time: 35
@@ -59,69 +59,69 @@ MonoBehaviour:
     key: 2
   - time: 37
     key: 1
-  - time: 38
-    key: 2
-  - time: 39
-    key: 1
   - time: 40
     key: 3
-  - time: 44
+  - time: 40.5
     key: 3
-  - time: 48
+  - time: 41
+    key: 3
+  - time: 41.5
+    key: 3
+  - time: 42
     key: 2
-  - time: 49.5
-    key: 2
-  - time: 50
+  - time: 43
     key: 1
-  - time: 50.5
-    key: 1
-  - time: 51
-    key: 1
-  - time: 51.5
-    key: 1
-  - time: 52
-    key: 2
-  - time: 53.5
-    key: 2
-  - time: 54
-    key: 1
-  - time: 54.5
-    key: 1
-  - time: 55
-    key: 1
-  - time: 55.5
-    key: 1
-  - time: 56
+  - time: 44
     key: 0
-  - time: 56.5
+  - time: 44.5
+    key: 0
+  - time: 45
+    key: 0
+  - time: 45.5
+    key: 0
+  - time: 46
+    key: 2
+  - time: 47
     key: 1
+  - time: 48
+    key: 3
+  - time: 49
+    key: 3
+  - time: 50
+    key: 0
+  - time: 51
+    key: 0
+  - time: 52
+    key: 3
+  - time: 53
+    key: 3
+  - time: 54
+    key: 0
+  - time: 55
+    key: 0
+  - time: 56
+    key: 2
   - time: 57
     key: 2
-  - time: 57.5
-    key: 3
   - time: 58
-    key: 0
-  - time: 58.5
-    key: 1
+    key: 2
   - time: 59
     key: 2
-  - time: 59.5
-    key: 3
   - time: 60
-    key: 3
-  - time: 60.5
-    key: 2
+    key: 1
   - time: 61
     key: 1
-  - time: 61.5
-    key: 0
   - time: 62
-    key: 3
-  - time: 62.5
     key: 1
   - time: 63
     key: 1
-  - time: 63.5
+  - time: 64
+    key: 0
+  - time: 65
+    key: 0
+  - time: 66
+    key: 0
+  - time: 67
     key: 0
   - time: 72
     key: 0
@@ -131,64 +131,320 @@ MonoBehaviour:
     key: 1
   - time: 74
     key: 2
-  - time: 76
+  - time: 88
     key: 0
-  - time: 76.5
-    key: 1
-  - time: 77
-    key: 2
-  - time: 77.5
-    key: 3
-  - time: 78
-    key: 2
-  - time: 78.5
-    key: 1
-  - time: 79
-    key: 0
-  - time: 79.5
-    key: 0
-  - time: 80
-    key: 1
-  - time: 80.5
-    key: 2
-  - time: 81
-    key: 3
-  - time: 82
-    key: 3
-  - time: 83.5
-    key: 0
-  - time: 84
-    key: 1
-  - time: 84.5
-    key: 2
-  - time: 85.5
-    key: 3
-  - time: 86
-    key: 2
-  - time: 86.5
-    key: 1
-  - time: 89
-    key: 2
-  - time: 91
-    key: 2
-  - time: 90
-    key: 2
-  - time: 89.25
-    key: 1
-  - time: 90.25
-    key: 1
-  - time: 91.25
-    key: 1
   - time: 92
-    key: 2
-  - time: 92.25
-    key: 1
-  - time: 93
     key: 3
+  - time: 96
+    key: 0
+  - time: 100
+    key: 2
+  - time: 101
+    key: 2
+  - time: 102
+    key: 2
+  - time: 103
+    key: 2
+  - time: 104
+    key: 1
+  - time: 105
+    key: 1
+  - time: 106
+    key: 1
+  - time: 107
+    key: 1
+  - time: 108
+    key: 0
+  - time: 109
+    key: 0
+  - time: 110
+    key: 0
+  - time: 111
+    key: 0
+  - time: 120
+    key: 0
+  - time: 122
+    key: 0
+  - time: 124
+    key: 0
+  - time: 127
+    key: 0
+  - time: 128
+    key: 0
+  - time: 129
+    key: 0
+  - time: 130
+    key: 0
+  - time: 131
+    key: 0
+  - time: 132
+    key: 0
+  - time: 133
+    key: 0
+  - time: 134
+    key: 0
+  - time: 135
+    key: 0
+  - time: 136
+    key: 3
+  - time: 137
+    key: 3
+  - time: 138
+    key: 3
+  - time: 139
+    key: 3
+  - time: 88.5
+    key: 1
+  - time: 89.5
+    key: 0
+  - time: 90
+    key: 1
+  - time: 91
+    key: 0
+  - time: 91.5
+    key: 1
+  - time: 92.5
+    key: 2
   - time: 93.5
+    key: 3
+  - time: 94
+    key: 2
+  - time: 95
+    key: 3
+  - time: 95.5
+    key: 2
+  - time: 96.5
+    key: 1
+  - time: 97.5
     key: 0
-  - time: 91.75
+  - time: 98
+    key: 1
+  - time: 99
     key: 0
+  - time: 99.5
+    key: 1
+  - time: 112
+    key: 3
+  - time: 113
+    key: 3
+  - time: 114
+    key: 3
+  - time: 115
+    key: 3
+  - time: 116
+    key: 1
+  - time: 116
+    key: 2
+  - time: 117
+    key: 1
+  - time: 117
+    key: 2
+  - time: 118
+    key: 1
+  - time: 118
+    key: 2
+  - time: 119
+    key: 1
+  - time: 119
+    key: 2
+  - time: 120.5
+    key: 0
+  - time: 121
+    key: 0
+  - time: 121.5
+    key: 2
+  - time: 122.5
+    key: 0
+  - time: 123
+    key: 0
+  - time: 124.5
+    key: 0
+  - time: 125
+    key: 0
+  - time: 125.5
+    key: 2
+  - time: 126
+    key: 0
+  - time: 126.5
+    key: 0
+  - time: 123.5
+    key: 2
+  - time: 127.5
+    key: 2
+  - time: 128.5
+    key: 0
+  - time: 129.5
+    key: 2
+  - time: 130.5
+    key: 0
+  - time: 131.5
+    key: 2
+  - time: 132.5
+    key: 0
+  - time: 133.5
+    key: 2
+  - time: 134.5
+    key: 0
+  - time: 135.5
+    key: 2
+  - time: 136.5
+    key: 3
+  - time: 137.5
+    key: 1
+  - time: 138.5
+    key: 3
+  - time: 139.5
+    key: 1
+  - time: 140
+    key: 3
+  - time: 140.5
+    key: 3
+  - time: 141
+    key: 3
+  - time: 141.5
+    key: 1
+  - time: 142
+    key: 3
+  - time: 142.5
+    key: 3
+  - time: 143
+    key: 3
+  - time: 143.5
+    key: 1
+  - time: 144
+    key: 3
+  - time: 144.5
+    key: 3
+  - time: 145
+    key: 3
+  - time: 145.5
+    key: 1
+  - time: 146
+    key: 3
+  - time: 146.5
+    key: 3
+  - time: 147
+    key: 3
+  - time: 147.5
+    key: 1
+  - time: 148
+    key: 3
+  - time: 148.5
+    key: 3
+  - time: 149
+    key: 3
+  - time: 149.5
+    key: 1
+  - time: 150
+    key: 3
+  - time: 150.5
+    key: 3
+  - time: 151
+    key: 3
+  - time: 151.5
+    key: 1
+  - time: 152
+    key: 0
+  - time: 152.5
+    key: 0
+  - time: 153
+    key: 0
+  - time: 153.5
+    key: 2
+  - time: 154
+    key: 0
+  - time: 154.5
+    key: 0
+  - time: 155
+    key: 0
+  - time: 155.5
+    key: 2
+  - time: 156
+    key: 0
+  - time: 156.5
+    key: 0
+  - time: 157
+    key: 0
+  - time: 157.5
+    key: 2
+  - time: 158
+    key: 0
+  - time: 158.5
+    key: 0
+  - time: 159
+    key: 0
+  - time: 159.5
+    key: 2
+  - time: 160
+    key: 0
+  - time: 160.5
+    key: 0
+  - time: 161
+    key: 0
+  - time: 161.5
+    key: 2
+  - time: 162
+    key: 0
+  - time: 162.5
+    key: 0
+  - time: 163
+    key: 0
+  - time: 163.5
+    key: 2
+  - time: 164
+    key: 0
+  - time: 164.5
+    key: 0
+  - time: 165
+    key: 0
+  - time: 165.5
+    key: 2
+  - time: 166
+    key: 0
+  - time: 166.5
+    key: 0
+  - time: 167
+    key: 0
+  - time: 167.5
+    key: 2
+  - time: 168
+    key: 3
+  - time: 168.5
+    key: 3
+  - time: 169
+    key: 3
+  - time: 169.5
+    key: 1
+  - time: 170
+    key: 3
+  - time: 170.5
+    key: 3
+  - time: 171
+    key: 3
+  - time: 171.5
+    key: 1
+  - time: 172
+    key: 0
+  - time: 172
+    key: 3
+  - time: 177
+    key: 1
+  - time: 177
+    key: 2
+  - time: 178
+    key: 2
+  - time: 179
+    key: 3
+  - time: 179.5
+    key: 2
+  - time: 180
+    key: 1
+  - time: 182
+    key: 1
+  - time: 184
+    key: 2
+  - time: 188
+    key: 3
   looks:
   - time: 4
     lookTowards: 0
@@ -207,5 +463,5 @@ MonoBehaviour:
   - time: 16
     type: 1
     spriteIndex: 1
-  pointer: 91.75
-  denominator: 8
+  pointer: 188
+  denominator: 7

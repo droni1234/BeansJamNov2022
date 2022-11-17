@@ -13,6 +13,8 @@ public class MenuController : MonoBehaviour
 
     public CanvasGroup controlls;
     public CanvasGroup credits;
+
+    public AudioSource whipSound;
     
     private bool isMenuVisible
     {
@@ -56,6 +58,7 @@ public class MenuController : MonoBehaviour
 
     public void ShowCredits()
     {
+        whipSound.Play();
         credits.interactable = true;
         credits.blocksRaycasts = true;
         credits.alpha = 1F;
