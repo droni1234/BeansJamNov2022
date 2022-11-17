@@ -4,26 +4,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using whip.battle.edit;
 
-[RequireComponent(typeof(Image))]
-[RequireComponent(typeof(Button))]
-public class FightTrigger : MonoBehaviour
+namespace whip.battle
 {
+    [RequireComponent(typeof(Image))]
+    [RequireComponent(typeof(Button))]
+    public class FightTrigger : MonoBehaviour
+    {
 
-    public BattleObject battle;
-    public string levelname;
-    public DialogueTrigger dialogue;
+        public BattleObject battle;
+        public string levelname;
+        public DialogueTrigger dialogue;
 
-    public void Fight()
-    {   
-        if (dialogue)
+        public void Fight()
         {
-            DialogueManager2.instance.Fight(dialogue.messages,dialogue.actors, this);
+            if (dialogue)
+            {
+                DialogueManager2.instance.Fight(dialogue.messages, dialogue.actors, this);
+            }
+            else
+            {
+                FightTriggerMaster.instance.Fight(battle, levelname);
+            }
+
         }
-        else
-        {
-            FightTriggerMaster.instance.Fight(battle, levelname);
-        }
-        
     }
 }

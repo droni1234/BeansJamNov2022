@@ -3,45 +3,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteObject : MonoBehaviour
+namespace whip.battle
 {
-
-    public bool pressable;
-
-    public string buttonToPress;
-
-    public float time;
-
-    public float bpm;
-
-    public float beat;
-
-    public Transform reference;
-
-    private void Update()
+    public class NoteObject : MonoBehaviour
     {
-        float timing = (((time+FightSystem.instance.warmupTime) * beat - FightSystem.instance.currentTime) * FightSystem.instance.battle.speed);
-        transform.position = new Vector3(transform.position.x, reference.position.y + timing, transform.position.z);
-        if (Input.GetButtonDown(buttonToPress) && pressable)
+
+        public bool pressable;
+
+        public string buttonToPress;
+
+        public float time;
+
+        public float bpm;
+
+        public float beat;
+
+        public Transform reference;
+
+        private void Update()
         {
-            FightSystem.instance.NoteHit();
-            DestroyImmediate(gameObject);
+            float timing = (((time + FightSystem.instance.warmupTime) * beat - FightSystem.instance.currentTime) *
+                            FightSystem.instance.battle.speed);
+            transform.position = new Vector3(transform.position.x, reference.position.y + timing, transform.position.z);
+            if (Input.GetButtonDown(buttonToPress) && pressable)
+            {
+                FightSystem.instance.NoteHit();
+                DestroyImmediate(gameObject);
+            }
+
         }
 
-    }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (!other.CompareTag("Activator")) return;
+            pressable = true;
+        }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Activator")) return;
-        pressable = true;
-    }
-    
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (!other.CompareTag("Activator")) return;
-        pressable = false;
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (!other.CompareTag("Activator")) return;
+            pressable = false;
 
-        FightSystem.instance.NoteMissed();
-        Destroy(gameObject, 5F);
+            FightSystem.instance.NoteMissed();
+            Destroy(gameObject, 5F);
+        }
     }
 }

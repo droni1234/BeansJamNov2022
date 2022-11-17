@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: FinalBoss
   m_EditorClassIdentifier: 
   bpm: 150
-  speed: 15
   warmup: 4
-  audio: {fileID: 8300000, guid: 8494fb1a3ed368a4e887179bf85b0cad, type: 3}
   enemy:
     sprites:
     - {fileID: 21300000, guid: 8a91990788dc5cc40bca12a4fbf54a4c, type: 3}
@@ -28,6 +26,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1f103cee519446b45afdffbbc0852cc7, type: 3}
     - {fileID: 21300000, guid: 859335350c7d6c2469d2cdce94bd59b0, type: 3}
     - {fileID: 21300000, guid: 3c1c972d2284dba44b89e2fb1ca454a4, type: 3}
+  audio: {fileID: 8300000, guid: 8494fb1a3ed368a4e887179bf85b0cad, type: 3}
+  speed: 10
+  healthAmount: 40
+  healthRestore: 2
+  healthLoss: 15
   notes:
   - time: 8
     key: 1

@@ -43,4 +43,42 @@ public static class EditorSFX
             new object[] { }
         );
     }
+
+    public static int GetClipSamplePosition()
+    {
+        Assembly unityEditorAssembly = typeof(AudioImporter).Assembly;
+ 
+        Type audioUtilClass = unityEditorAssembly.GetType("UnityEditor.AudioUtil");
+        MethodInfo method = audioUtilClass.GetMethod(
+            "GetPreviewClipSamplePosition",
+            BindingFlags.Static | BindingFlags.Public,
+            null,
+            new Type[] { },
+            null
+        );
+ 
+        return (int)method.Invoke(
+            null,
+            new object[] { }
+        );
+    }
+
+    public static bool IsPreviewClipPlaying()
+    {
+        Assembly unityEditorAssembly = typeof(AudioImporter).Assembly;
+
+        Type audioUtilClass = unityEditorAssembly.GetType("UnityEditor.AudioUtil");
+        MethodInfo method = audioUtilClass.GetMethod(
+            "IsPreviewClipPlaying",
+            BindingFlags.Static | BindingFlags.Public,
+            null,
+            new Type[] { },
+            null
+        );
+ 
+        return (bool)method.Invoke(
+            null,
+            new object[] { }
+        );
+    }
 }

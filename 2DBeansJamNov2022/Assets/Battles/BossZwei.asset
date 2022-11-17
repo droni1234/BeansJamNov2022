@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
+  m_Name: BossZwei
+  m_EditorClassIdentifier: 
+  bpm: 150
+  speed: 15
+  warmup: 4
+  audio: {fileID: 8300000, guid: 8494fb1a3ed368a4e887179bf85b0cad, type: 3}
+  enemy:
+    sprites:
+    - {fileID: 21300000, guid: b5bfe3bbee6220b4db65c661f7133f0d, type: 3}
+    - {fileID: 21300000, guid: 73475ee11f0e19147b78c72f8658b853, type: 3}
+    - {fileID: 21300000, guid: 64b3c81401d55a144b9f483364ae0c18, type: 3}
+    - {fileID: 21300000, guid: c8a48fde8e11d4c4f9d94b35670f8ae5, type: 3}
+  player:
+    sprites:
+    - {fileID: 21300000, guid: e27746bf406c83340825787e89cd5718, type: 3}
+    - {fileID: 21300000, guid: b5f17f1d484d9954099fa75beb08ebb8, type: 3}
+  notes:
+  - time: 3
+    key: 1
+  - time: 4
+    key: 2
+  - time: 5
+    key: 1
+  - time: 6
+    key: 2
+  - time: 7
+    key: 1
+  - time: 8
+    key: 2
+  - time: 9
+    key: 1
+  - time: 10
+    key: 2
+  - time: 11
+    key: 1
+  - time: 12
+    key: 2
+  - time: 13
+    key: 0
+  - time: 14
+    key: 3
+  - time: 15
+    key: 0
+  - time: 16
+    key: 3
+  - time: 17
+    key: 0
+  - time: 18
+    key: 3
+  - time: 19
+    key: 0
+  - time: 20
+    key: 3
+  - time: 30
+    key: 1
+  - time: 31
+    key: 2
+  - time: 32
+    key: 1
+  - time: 33
+    key: 2
+  - time: 34
+    key: 1
+  - time: 35
+    key: 2
+  - time: 36
+    key: 1
+  - time: 37
+    key: 2
+  - time: 38
+    key: 1
+  - time: 39
+    key: 2
+  - time: 40
+    key: 0
+  - time: 41
+    key: 3
+  - time: 42
+    key: 0
+  - time: 43
+    key: 3
+  - time: 44
+    key: 0
+  - time: 45
+    key: 3
+  - time: 46
+    key: 0
+  - time: 47
+    key: 3
+  - time: 48
+    key: 2
+  - time: 49
+    key: 1
+  - time: 50
+    key: 0
+  - time: 55
+    key: 0
+  - time: 56
+    key: 1
+  - time: 57
+    key: 2
+  - time: 58
+    key: 3
+  - time: 60
+    key: 1
+  - time: 61
+    key: 2
+  - time: 62
+    key: 3
+  - time: 63
+    key: 3
+  - time: 65
+    key: 1
+  - time: 66
+    key: 3
+  - time: 67
+    key: 2
+  - time: 68
+    key: 0
+  - time: 70
+    key: 0
+  - time: 71
+    key: 1
+  - time: 72
+    key: 2
+  - time: 73
+    key: 3
+  - time: 75
+    key: 1
+  - time: 80
+    key: 2
+  - time: 81
+    key: 3
+  - time: 82
+    key: 0
+  - time: 83
+    key: 1
+  - time: 84
+    key: 2
+  - time: 85
+    key: 3
+  - time: 86
+    key: 0
+  - time: 87
+    key: 1
+  - time: 88
+    key: 2
+  - time: 89
+    key: 3
+  - time: 90
+    key: 0
+  - time: 91
+    key: 1
+  - time: 92
+    key: 1
+  - time: 93
+    key: 2
+  - time: 94
+    key: 3
+  looks:
+  - time: 8
+    lookTowards: 1
+  - time: 16
+    lookTowards: 0
+  - time: 24
+    lookTowards: 2
+  sprites:
+  - time: 2
+    type: 1
+    spriteIndex: 0
+  - time: 4
+    type: 1
+    spriteIndex: 1
+  - time: 6
+    type: 1
+    spriteIndex: 2
+  - time: 8
+    type: 1
+    spriteIndex: 3
+  - time: 16
+    type: 0
+    spriteIndex: 1
+  - time: 50
+    type: 0
+    spriteIndex: 0
+  - time: 52
+    type: 0
+    spriteIndex: 1
+  - time: 53
+    type: 0
+    spriteIndex: 1
+  - time: 63
+    type: 0
+    spriteIndex: 1
+  - time: 63
+    type: 0
+    spriteIndex: 0
+  pointer: 0
+  denominator: 0

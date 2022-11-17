@@ -1,0 +1,493 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
+  m_Name: BossDrei
+  m_EditorClassIdentifier: 
+  bpm: 140
+  warmup: 16
+  enemy:
+    sprites:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 66160a5a3345b624d97151ae0228ee21, type: 3}
+    - {fileID: 21300000, guid: e599284f875508a4fbfdd41d09a8ed2b, type: 3}
+    - {fileID: 21300000, guid: bbb0b08926dc9df46a2b335b43d21551, type: 3}
+  player:
+    sprites: []
+  audio: {fileID: 8300000, guid: 19cf8c72356bec34ea3fe29153682609, type: 3}
+  speed: 6
+  healthAmount: 20
+  healthRestore: 1
+  healthLoss: 2
+  notes:
+  - time: 0
+    key: 0
+  - time: 0.75
+    key: 0
+  - time: 1.5
+    key: 0
+  - time: 2.25
+    key: 0
+  - time: 3
+    key: 0
+  - time: 4
+    key: 1
+  - time: 4.75
+    key: 1
+  - time: 5.5
+    key: 1
+  - time: 6.25
+    key: 1
+  - time: 7
+    key: 2
+  - time: 7.5
+    key: 2
+  - time: 8
+    key: 2
+  - time: 8.75
+    key: 3
+  - time: 9.5
+    key: 3
+  - time: 10.25
+    key: 3
+  - time: 11
+    key: 3
+  - time: 11.5
+    key: 3
+  - time: 12
+    key: 2
+  - time: 13
+    key: 1
+  - time: 13.5
+    key: 0
+  - time: 14.5
+    key: 0
+  - time: 16
+    key: 3
+  - time: 17
+    key: 2
+  - time: 18
+    key: 2
+  - time: 19
+    key: 0
+  - time: 20
+    key: 1
+  - time: 21
+    key: 1
+  - time: 22
+    key: 2
+  - time: 23
+    key: 3
+  - time: 24
+    key: 0
+  - time: 25
+    key: 2
+  - time: 26
+    key: 1
+  - time: 27
+    key: 3
+  - time: 28
+    key: 0
+  - time: 29
+    key: 2
+  - time: 30
+    key: 0
+  - time: 31
+    key: 3
+  - time: 32
+    key: 1
+  - time: 33
+    key: 0
+  - time: 34
+    key: 1
+  - time: 35
+    key: 0
+  - time: 36
+    key: 2
+  - time: 37
+    key: 0
+  - time: 38
+    key: 3
+  - time: 39
+    key: 1
+  - time: 40
+    key: 2
+  - time: 41
+    key: 1
+  - time: 42
+    key: 3
+  - time: 43
+    key: 2
+  - time: 44
+    key: 3
+  - time: 45
+    key: 3
+  - time: 46
+    key: 2
+  - time: 47
+    key: 3
+  - time: 48
+    key: 1
+  - time: 49
+    key: 3
+  - time: 50
+    key: 0
+  - time: 51
+    key: 2
+  - time: 52
+    key: 2
+  - time: 53
+    key: 2
+  - time: 54
+    key: 1
+  - time: 55
+    key: 2
+  - time: 56
+    key: 0
+  - time: 57
+    key: 0
+  - time: 58
+    key: 0
+  - time: 59
+    key: 0
+  - time: 60
+    key: 1
+  - time: 61
+    key: 1
+  - time: 62
+    key: 1
+  - time: 63
+    key: 2
+  - time: 64
+    key: 2
+  - time: 65
+    key: 2
+  - time: 66
+    key: 3
+  - time: 67
+    key: 3
+  - time: 68
+    key: 3
+  - time: 69
+    key: 1
+  - time: 70
+    key: 0
+  - time: 71
+    key: 0
+  - time: 72
+    key: 3
+  - time: 73
+    key: 2
+  - time: 74
+    key: 2
+  - time: 75
+    key: 0
+  - time: 76
+    key: 1
+  - time: 77
+    key: 1
+  - time: 78
+    key: 2
+  - time: 79
+    key: 3
+  - time: 80
+    key: 0
+  - time: 81
+    key: 2
+  - time: 82
+    key: 1
+  - time: 83
+    key: 3
+  - time: 84
+    key: 0
+  - time: 85
+    key: 2
+  - time: 86
+    key: 0
+  - time: 87
+    key: 3
+  - time: 88
+    key: 1
+  - time: 89
+    key: 0
+  - time: 90
+    key: 1
+  - time: 91
+    key: 0
+  - time: 92
+    key: 2
+  - time: 93
+    key: 0
+  - time: 94
+    key: 3
+  - time: 95
+    key: 1
+  - time: 96
+    key: 2
+  - time: 97
+    key: 1
+  - time: 98
+    key: 3
+  - time: 99
+    key: 2
+  - time: 100
+    key: 3
+  - time: 101
+    key: 3
+  - time: 102
+    key: 2
+  - time: 103
+    key: 3
+  - time: 104
+    key: 1
+  - time: 105
+    key: 3
+  - time: 106
+    key: 0
+  - time: 107
+    key: 2
+  - time: 108
+    key: 2
+  - time: 109
+    key: 2
+  - time: 110
+    key: 1
+  - time: 111
+    key: 2
+  - time: 112
+    key: 0
+  - time: 112.25
+    key: 0
+  - time: 112.5
+    key: 0
+  - time: 112.75
+    key: 0
+  - time: 114
+    key: 0
+  - time: 116
+    key: 1
+  - time: 117.5
+    key: 2
+  - time: 118.5
+    key: 2
+  - time: 120
+    key: 3
+  - time: 120.25
+    key: 3
+  - time: 120.5
+    key: 3
+  - time: 120.75
+    key: 3
+  - time: 122
+    key: 3
+  - time: 124
+    key: 1
+  - time: 126
+    key: 1
+  - time: 128
+    key: 3
+  - time: 128.25
+    key: 3
+  - time: 128.5
+    key: 3
+  - time: 128.75
+    key: 3
+  - time: 130
+    key: 3
+  - time: 132
+    key: 1
+  - time: 133
+    key: 2
+  - time: 134
+    key: 1
+  - time: 135
+    key: 2
+  - time: 136
+    key: 0
+  - time: 136.25
+    key: 0
+  - time: 136.5
+    key: 0
+  - time: 136.75
+    key: 0
+  - time: 138
+    key: 0
+  - time: 140
+    key: 2
+  - time: 142
+    key: 2
+  - time: 144
+    key: 0
+  - time: 144
+    key: 3
+  - time: 146
+    key: 0
+  - time: 146
+    key: 3
+  - time: 148
+    key: 0
+  - time: 148
+    key: 3
+  - time: 150
+    key: 0
+  - time: 150
+    key: 3
+  - time: 152
+    key: 0
+  - time: 152
+    key: 3
+  - time: 154
+    key: 0
+  - time: 154
+    key: 3
+  - time: 156
+    key: 0
+  - time: 156
+    key: 3
+  - time: 158
+    key: 0
+  - time: 158
+    key: 3
+  - time: 160
+    key: 0
+  - time: 160
+    key: 3
+  - time: 166
+    key: 1
+  - time: 167
+    key: 2
+  - time: 168
+    key: 1
+  - time: 169
+    key: 2
+  - time: 170
+    key: 1
+  - time: 171
+    key: 2
+  - time: 172
+    key: 1
+  - time: 173
+    key: 2
+  - time: 174
+    key: 1
+  - time: 175
+    key: 2
+  - time: 176
+    key: 1
+  - time: 177
+    key: 2
+  - time: 178
+    key: 1
+  - time: 179
+    key: 2
+  - time: 180
+    key: 1
+  - time: 181
+    key: 2
+  - time: 182
+    key: 1
+  - time: 183
+    key: 2
+  - time: 184
+    key: 1
+  - time: 185
+    key: 2
+  - time: 186
+    key: 1
+  - time: 187
+    key: 2
+  looks:
+  - time: 0
+    lookTowards: 0
+  - time: 15
+    lookTowards: 1
+  - time: 136
+    lookTowards: 0
+  - time: 144
+    lookTowards: 1
+  sprites:
+  - time: 1
+    type: 1
+    spriteIndex: 1
+  - time: 112
+    type: 1
+    spriteIndex: 2
+  - time: 144
+    type: 1
+    spriteIndex: 3
+  - time: 166
+    type: 1
+    spriteIndex: 1
+  - time: 167
+    type: 1
+    spriteIndex: 3
+  - time: 168
+    type: 1
+    spriteIndex: 1
+  - time: 169
+    type: 1
+    spriteIndex: 3
+  - time: 170
+    type: 1
+    spriteIndex: 1
+  - time: 171
+    type: 1
+    spriteIndex: 3
+  - time: 172
+    type: 1
+    spriteIndex: 1
+  - time: 173
+    type: 1
+    spriteIndex: 3
+  - time: 174
+    type: 1
+    spriteIndex: 1
+  - time: 175
+    type: 1
+    spriteIndex: 3
+  - time: 176
+    type: 1
+    spriteIndex: 1
+  - time: 177
+    type: 1
+    spriteIndex: 3
+  - time: 178
+    type: 1
+    spriteIndex: 1
+  - time: 179
+    type: 1
+    spriteIndex: 3
+  - time: 180
+    type: 1
+    spriteIndex: 1
+  - time: 181
+    type: 1
+    spriteIndex: 3
+  - time: 182
+    type: 1
+    spriteIndex: 1
+  - time: 183
+    type: 1
+    spriteIndex: 3
+  - time: 184
+    type: 1
+    spriteIndex: 1
+  - time: 185
+    type: 1
+    spriteIndex: 3
+  - time: 186
+    type: 1
+    spriteIndex: 1
+  - time: 187
+    type: 1
+    spriteIndex: 2
+  pointer: 3
+  denominator: 8

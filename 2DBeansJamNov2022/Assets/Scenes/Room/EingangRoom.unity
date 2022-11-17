@@ -1509,6 +1509,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6447079973407254782, guid: 324bf4060a8d2a44293067f3e8712c4f, type: 3}
+      propertyPath: messages.Array.data[3].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: 4eb7d49eb6bb8294a9346ebc33ac2763, type: 3}
     - target: {fileID: 6447079973407254783, guid: 324bf4060a8d2a44293067f3e8712c4f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
