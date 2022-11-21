@@ -548,6 +548,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &481158075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481158077}
+  - component: {fileID: 481158076}
+  m_Layer: 0
+  m_Name: Bools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &481158076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481158075}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0201beb5e1587fe479a3ee5b304a17b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: Bodyguard
+--- !u!4 &481158077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481158075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631414637
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,8 +851,80 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
       propertyPath: messages.Array.size
-      value: 6
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[1].ui
+      value: 
+      objectReference: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[2].ui
+      value: 
+      objectReference: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[3].ui
+      value: 
+      objectReference: {fileID: 21300000, guid: ef478b798f3891645916d5ce66e90e2d, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[1].name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[2].name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[3].name
+      value: Ninjabusch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[0].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: 4600f3e1f19859f4987a284baec1fd8f, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[1].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e2111959d5f0924abefbdbc2b846e51, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[2].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: b9d17bb16b8559c45a8c8d2ed4734f0f, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[3].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: c711071701895064198f699a641f88fe, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[4].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: 287d9cbadf109b14bbd24dc00b18aded, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[5].ton
+      value: 
+      objectReference: {fileID: 8300000, guid: af8adc73733452740a1d6a950915c55b, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[6].ton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 99a9c3689db38a543a1c9daf4bc504f0, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: actors.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 99a9c3689db38a543a1c9daf4bc504f0, type: 3}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Wie? Du denkst du kannst hier einfach an mir, Schranki Schrankmann vorbei?
       objectReference: {fileID: 0}
     - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
       propertyPath: messages.Array.data[3].message
@@ -824,8 +941,63 @@ PrefabInstance:
         f\xFCrs EINSCHR\xC4NKEN."
       objectReference: {fileID: 0}
     - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[6].actorID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
       propertyPath: messages.Array.data[6].message
-      value: "Und das Einschr\xE4nken ist hier nicht mein Job."
+      value: Warte!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[7].actorID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[7].message
+      value: Ganz ohne Grundlagen kannst du nicht einfach in den Club.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[8].actorID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[8].message
+      value: "Du wirst links und rechts auseinander genommen, Schlaftabletten k\xF6nnen
+        die dort nicht gebrauchen."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[9].actorID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[9].message
+      value: "Ich w\xFCrde auch gerne rein aber der T\xFCrsteher fand meinen Drip
+        nicht passend... "
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[10].actorID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[10].message
+      value: '*seufz*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[11].actorID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[11].message
+      value: "Ich bin \xFCbrigens der Ninjabusch, ich habe die besten Moves mir mit
+        viel \xDCbung angeeignet."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[12].actorID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108529574665902570, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
+      propertyPath: messages.Array.data[12].message
+      value: "Jetzt ist es Zeit meine Buschkraft F\xE4higkeiten jemand anderes beizubringen."
       objectReference: {fileID: 0}
     - target: {fileID: 9108529574665902580, guid: 5198a8a841f5298429afc0e3aa784982, type: 3}
       propertyPath: m_Color.a
@@ -2085,6 +2257,7 @@ GameObject:
   - component: {fileID: 2137945476}
   - component: {fileID: 2137945478}
   - component: {fileID: 2137945477}
+  - component: {fileID: 2137945479}
   m_Layer: 5
   m_Name: Schrank
   m_TagString: Untagged
@@ -2151,3 +2324,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137945475}
   m_CullTransparentMesh: 1
+--- !u!114 &2137945479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137945475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653ac50ddfea6304d811e4f2eea78544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pairs:
+  - key: Bodyguard
+    value: 1
+  - key: Tutorial
+    value: 0

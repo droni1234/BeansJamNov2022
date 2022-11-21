@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 1508532958}
     - target: {fileID: 2296820377846325944, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: levelname
-      value: VipRoom2
+      value: VipRoom
       objectReference: {fileID: 0}
     - target: {fileID: 2296820377846325945, guid: 38c039f5d81c4a948b94020e38084b1e, type: 3}
       propertyPath: m_Pivot.x

@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using static UnityEngine.SceneManagement.LoadSceneMode;
 
 public class MenuController : MonoBehaviour
@@ -15,6 +18,8 @@ public class MenuController : MonoBehaviour
     public CanvasGroup credits;
 
     public AudioSource whipSound;
+
+    public TextMeshProUGUI text;
     
     private bool isMenuVisible
     {
@@ -24,6 +29,8 @@ public class MenuController : MonoBehaviour
     
     private void Start()
     {
+
+        text.text = "Version - " + Application.version;
         
         #if UNITY_WEBGL
         Destroy(GameObject.Find("Exit"));

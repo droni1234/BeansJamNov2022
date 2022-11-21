@@ -45,7 +45,7 @@ namespace whip.battle
             pressable = false;
 
             FightSystem.instance.NoteMissed();
-            Destroy(gameObject, 5F);
+            Destroy(gameObject, 0.5F);
         }
     }
 }

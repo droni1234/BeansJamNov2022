@@ -74,6 +74,7 @@ public class DialogueManager2 : MonoBehaviour
         StartCoroutine(messagePrinter);
         actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
+        actorImage.color = actorImage.sprite ? Color.white : Color.clear;
         textBox.sprite = actorToDisplay.ui;
         
     }

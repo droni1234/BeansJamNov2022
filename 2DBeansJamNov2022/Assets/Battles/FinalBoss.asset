@@ -30,7 +30,7 @@ MonoBehaviour:
   speed: 10
   healthAmount: 40
   healthRestore: 2
-  healthLoss: 15
+  healthLoss: 3
   notes:
   - time: 8
     key: 1
