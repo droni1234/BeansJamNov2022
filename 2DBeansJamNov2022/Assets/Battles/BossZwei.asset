@@ -204,3 +204,5 @@ MonoBehaviour:
     spriteIndex: 2
   pointer: 70
   denominator: 3
+  boolKey: Budi
+  isBoolKeyPlayerPref: 1

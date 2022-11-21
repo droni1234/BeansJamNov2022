@@ -266,3 +266,5 @@ MonoBehaviour:
     spriteIndex: 2
   pointer: 0
   denominator: 3
+  boolKey: Nils
+  isBoolKeyPlayerPref: 1

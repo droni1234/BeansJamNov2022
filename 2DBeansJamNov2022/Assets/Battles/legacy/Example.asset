@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Example
   m_EditorClassIdentifier: 
   bpm: 156
-  speed: 5
   warmup: 10
-  audio: {fileID: 8300000, guid: 84a4d149d04ed684ab6a34f4b827f35b, type: 3}
   enemy:
     sprites: []
   player:
     sprites: []
+  audio: {fileID: 8300000, guid: 84a4d149d04ed684ab6a34f4b827f35b, type: 3}
+  speed: 5
+  healthAmount: 10
+  healthRestore: 2
+  healthLoss: 1
   notes:
   - time: 0
     key: 1
@@ -45,3 +48,7 @@ MonoBehaviour:
     key: 2
   looks: []
   sprites: []
+  pointer: 0
+  denominator: 1
+  boolKey: Droni
+  isBoolKeyPlayerPref: 0

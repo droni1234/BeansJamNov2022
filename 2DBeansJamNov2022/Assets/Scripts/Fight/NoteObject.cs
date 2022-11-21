@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace whip.battle
@@ -22,6 +23,8 @@ namespace whip.battle
 
         private void Update()
         {
+            if (!FightSystem.instance.startPlaying) return;
+            
             float timing = (((time + FightSystem.instance.warmupTime) * beat - FightSystem.instance.currentTime) *
                             FightSystem.instance.battle.speed);
             transform.position = new Vector3(transform.position.x, reference.position.y + timing, transform.position.z);
@@ -33,6 +36,7 @@ namespace whip.battle
 
         }
 
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.CompareTag("Activator")) return;
@@ -41,6 +45,7 @@ namespace whip.battle
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            if(!pressable) return;
             if (!other.CompareTag("Activator")) return;
             pressable = false;
 

@@ -569,3 +569,5 @@ MonoBehaviour:
     spriteIndex: 1
   pointer: 172
   denominator: 8
+  boolKey: Droni
+  isBoolKeyPlayerPref: 1

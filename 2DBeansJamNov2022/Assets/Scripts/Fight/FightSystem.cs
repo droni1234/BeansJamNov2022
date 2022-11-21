@@ -7,6 +7,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
 using whip.battle.edit;
 using Random = UnityEngine.Random;
@@ -121,7 +122,7 @@ namespace whip.battle
             }
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             scoreText.text =
                 "Score: " + Math.Round(currentScore * 100F) / 100F + "\n" +
@@ -134,7 +135,7 @@ namespace whip.battle
                 new Vector3(1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F);
             playerImage.transform.localScale =
                 new Vector3(1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F, 1F + beatSizer * 0.05F);
-            health -= Time.fixedDeltaTime * (healthDifficulty / noteHealthAmount);
+            health -= Time.deltaTime * (healthDifficulty / noteHealthAmount);
 
             if (startPlaying)
             {
@@ -249,7 +250,7 @@ namespace whip.battle
         public void NoteHit()
         {
             currentScore += scorePerNote * multiplier;
-            multiplier *= 1.1F;
+            multiplier += 0.1F;
             if (multiplier > 10F && niceTimer < currentTime)
             {
                 GoodCombo();
@@ -277,8 +278,15 @@ namespace whip.battle
             niceSound.Play();
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         private void Win()
         {
+            if (battle.isBoolKeyPlayerPref)
+            {
+                PlayerPrefs.SetInt(battle.boolKey, 1);
+                PlayerPrefs.Save();
+            }
+            GlobalBoolMaster.setBool(battle.boolKey, true);
             SceneManager.LoadSceneAsync(winLevel, LoadSceneMode.Single);
             Destroy(this);
         }

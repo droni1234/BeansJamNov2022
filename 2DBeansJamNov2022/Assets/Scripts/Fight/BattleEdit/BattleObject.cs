@@ -26,16 +26,19 @@ namespace whip.battle.edit
 
         [Space]
         
-        public List<Note> notes;
+        public List<Note> notes = new();
 
         public List<LookTowards> looks;
         public List<SetSprite> sprites;
 
         [HideInInspector]
-        public float pointer;
+        public float pointer = 0;
         [HideInInspector]
-        public int denominator;
-
+        public int denominator = 1;
+        
+        public string boolKey = "undefined";
+        public bool isBoolKeyPlayerPref = false;
+        
         public void addRandomNextNote()
         {
             var time = Mathf.Round(notes.Last().time) + 1;

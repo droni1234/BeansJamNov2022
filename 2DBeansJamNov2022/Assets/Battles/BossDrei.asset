@@ -495,3 +495,5 @@ MonoBehaviour:
     spriteIndex: 2
   pointer: 8
   denominator: 8
+  boolKey: Ede
+  isBoolKeyPlayerPref: 1

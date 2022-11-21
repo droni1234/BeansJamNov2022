@@ -2626,3 +2626,5 @@ MonoBehaviour:
     spriteIndex: 0
   pointer: 8
   denominator: 0
+  boolKey: Simon
+  isBoolKeyPlayerPref: 1

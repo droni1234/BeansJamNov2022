@@ -12,19 +12,522 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  bpm: 0
-  warmup: 0
+  bpm: 130
+  warmup: 8
   enemy:
-    sprites: []
+    sprites:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 99a9c3689db38a543a1c9daf4bc504f0, type: 3}
+    - {fileID: 21300000, guid: b79362f630b48c84ba22e2176277567f, type: 3}
+    - {fileID: 21300000, guid: 316ba1222abc7054292d89233277f772, type: 3}
+    - {fileID: 21300000, guid: 5ed10baf8827f9240ab39453648c4faa, type: 3}
+    - {fileID: 21300000, guid: a07b6cc4e4aace64faedd0991dc14bb9, type: 3}
   player:
     sprites: []
-  audio: {fileID: 0}
-  speed: 0
-  healthAmount: 10
-  healthRestore: 2
-  healthLoss: 20
-  notes: []
-  looks: []
-  sprites: []
-  pointer: 0
-  denominator: 0
+  audio: {fileID: 8300000, guid: d5c86f87573187f4e9966e1aa83947e5, type: 3}
+  speed: 2
+  healthAmount: 100
+  healthRestore: 1
+  healthLoss: 1
+  notes:
+  - time: 0
+    key: 0
+  - time: 8
+    key: 3
+  - time: 16
+    key: 1
+  - time: 24
+    key: 2
+  - time: 32
+    key: 0
+  - time: 34
+    key: 3
+  - time: 36
+    key: 0
+  - time: 38
+    key: 3
+  - time: 40
+    key: 0
+  - time: 42
+    key: 3
+  - time: 44
+    key: 0
+  - time: 46
+    key: 3
+  - time: 48
+    key: 0
+  - time: 50
+    key: 3
+  - time: 52
+    key: 0
+  - time: 54
+    key: 3
+  - time: 56
+    key: 0
+  - time: 58
+    key: 3
+  - time: 60
+    key: 0
+  - time: 62
+    key: 3
+  - time: 64
+    key: 1
+  - time: 66
+    key: 2
+  - time: 68
+    key: 1
+  - time: 70
+    key: 2
+  - time: 72
+    key: 1
+  - time: 74
+    key: 2
+  - time: 76
+    key: 1
+  - time: 78
+    key: 2
+  - time: 80
+    key: 1
+  - time: 82
+    key: 2
+  - time: 84
+    key: 1
+  - time: 86
+    key: 2
+  - time: 88
+    key: 1
+  - time: 90
+    key: 2
+  - time: 92
+    key: 1
+  - time: 94
+    key: 2
+  - time: 96
+    key: 0
+  - time: 104
+    key: 3
+  - time: 112
+    key: 1
+  - time: 120
+    key: 2
+  - time: 128
+    key: 0
+  - time: 130
+    key: 1
+  - time: 132
+    key: 2
+  - time: 134
+    key: 3
+  - time: 136
+    key: 0
+  - time: 138
+    key: 0
+  - time: 140
+    key: 3
+  - time: 142
+    key: 2
+  - time: 144
+    key: 0
+  - time: 146
+    key: 1
+  - time: 148
+    key: 2
+  - time: 150
+    key: 3
+  - time: 152
+    key: 0
+  - time: 154
+    key: 0
+  - time: 156
+    key: 2
+  - time: 158
+    key: 3
+  - time: 160
+    key: 0
+  - time: 161
+    key: 3
+  - time: 162
+    key: 0
+  - time: 163
+    key: 2
+  - time: 164
+    key: 3
+  - time: 165
+    key: 1
+  - time: 166
+    key: 0
+  - time: 168
+    key: 3
+  - time: 169
+    key: 3
+  - time: 176
+    key: 0
+  - time: 177
+    key: 0
+  - time: 180
+    key: 1
+  - time: 181
+    key: 1
+  - time: 184
+    key: 2
+  - time: 184
+    key: 3
+  - time: 186
+    key: 2
+  - time: 186
+    key: 3
+  - time: 188
+    key: 0
+  - time: 188
+    key: 3
+  - time: 192
+    key: 2
+  looks:
+  - time: 0
+    lookTowards: 0
+  - time: 8
+    lookTowards: 1
+  sprites:
+  - time: 0
+    type: 1
+    spriteIndex: 0
+  - time: 8
+    type: 1
+    spriteIndex: 1
+  - time: 14
+    type: 1
+    spriteIndex: 2
+  - time: 15
+    type: 1
+    spriteIndex: 3
+  - time: 16
+    type: 1
+    spriteIndex: 4
+  - time: 18
+    type: 1
+    spriteIndex: 1
+  - time: 22
+    type: 1
+    spriteIndex: 3
+  - time: 23
+    type: 1
+    spriteIndex: 5
+  - time: 24
+    type: 1
+    spriteIndex: 3
+  - time: 25
+    type: 1
+    spriteIndex: 4
+  - time: 26
+    type: 1
+    spriteIndex: 1
+  - time: 32
+    type: 1
+    spriteIndex: 3
+  - time: 33
+    type: 1
+    spriteIndex: 4
+  - time: 34
+    type: 1
+    spriteIndex: 3
+  - time: 35
+    type: 1
+    spriteIndex: 2
+  - time: 36
+    type: 1
+    spriteIndex: 3
+  - time: 37
+    type: 1
+    spriteIndex: 4
+  - time: 38
+    type: 1
+    spriteIndex: 3
+  - time: 39
+    type: 1
+    spriteIndex: 2
+  - time: 40
+    type: 1
+    spriteIndex: 3
+  - time: 41
+    type: 1
+    spriteIndex: 4
+  - time: 42
+    type: 1
+    spriteIndex: 3
+  - time: 43
+    type: 1
+    spriteIndex: 2
+  - time: 44
+    type: 1
+    spriteIndex: 3
+  - time: 45
+    type: 1
+    spriteIndex: 4
+  - time: 46
+    type: 1
+    spriteIndex: 3
+  - time: 47
+    type: 1
+    spriteIndex: 2
+  - time: 48
+    type: 1
+    spriteIndex: 3
+  - time: 49
+    type: 1
+    spriteIndex: 4
+  - time: 50
+    type: 1
+    spriteIndex: 3
+  - time: 51
+    type: 1
+    spriteIndex: 2
+  - time: 52
+    type: 1
+    spriteIndex: 3
+  - time: 53
+    type: 1
+    spriteIndex: 4
+  - time: 54
+    type: 1
+    spriteIndex: 3
+  - time: 55
+    type: 1
+    spriteIndex: 2
+  - time: 56
+    type: 1
+    spriteIndex: 3
+  - time: 57
+    type: 1
+    spriteIndex: 4
+  - time: 58
+    type: 1
+    spriteIndex: 3
+  - time: 59
+    type: 1
+    spriteIndex: 2
+  - time: 60
+    type: 1
+    spriteIndex: 3
+  - time: 61
+    type: 1
+    spriteIndex: 4
+  - time: 62
+    type: 1
+    spriteIndex: 3
+  - time: 63
+    type: 1
+    spriteIndex: 1
+  - time: 64
+    type: 1
+    spriteIndex: 2
+  - time: 66
+    type: 1
+    spriteIndex: 4
+  - time: 67
+    type: 1
+    spriteIndex: 5
+  - time: 68
+    type: 1
+    spriteIndex: 2
+  - time: 70
+    type: 1
+    spriteIndex: 4
+  - time: 71
+    type: 1
+    spriteIndex: 5
+  - time: 72
+    type: 1
+    spriteIndex: 2
+  - time: 74
+    type: 1
+    spriteIndex: 4
+  - time: 75
+    type: 1
+    spriteIndex: 5
+  - time: 76
+    type: 1
+    spriteIndex: 2
+  - time: 78
+    type: 1
+    spriteIndex: 4
+  - time: 79
+    type: 1
+    spriteIndex: 5
+  - time: 80
+    type: 1
+    spriteIndex: 2
+  - time: 82
+    type: 1
+    spriteIndex: 4
+  - time: 83
+    type: 1
+    spriteIndex: 5
+  - time: 84
+    type: 1
+    spriteIndex: 2
+  - time: 86
+    type: 1
+    spriteIndex: 4
+  - time: 87
+    type: 1
+    spriteIndex: 5
+  - time: 88
+    type: 1
+    spriteIndex: 2
+  - time: 90
+    type: 1
+    spriteIndex: 4
+  - time: 91
+    type: 1
+    spriteIndex: 5
+  - time: 92
+    type: 1
+    spriteIndex: 3
+  - time: 94
+    type: 1
+    spriteIndex: 1
+  - time: 96
+    type: 1
+    spriteIndex: 3
+  - time: 97
+    type: 1
+    spriteIndex: 1
+  - time: 104
+    type: 1
+    spriteIndex: 3
+  - time: 105
+    type: 1
+    spriteIndex: 1
+  - time: 112
+    type: 1
+    spriteIndex: 3
+  - time: 113
+    type: 1
+    spriteIndex: 1
+  - time: 120
+    type: 1
+    spriteIndex: 3
+  - time: 121
+    type: 1
+    spriteIndex: 1
+  - time: 128
+    type: 1
+    spriteIndex: 2
+  - time: 130
+    type: 1
+    spriteIndex: 3
+  - time: 132
+    type: 1
+    spriteIndex: 5
+  - time: 134
+    type: 1
+    spriteIndex: 4
+  - time: 136
+    type: 1
+    spriteIndex: 1
+  - time: 137
+    type: 1
+    spriteIndex: 2
+  - time: 138
+    type: 1
+    spriteIndex: 1
+  - time: 140
+    type: 1
+    spriteIndex: 4
+  - time: 141
+    type: 1
+    spriteIndex: 5
+  - time: 142
+    type: 1
+    spriteIndex: 2
+  - time: 143
+    type: 1
+    spriteIndex: 1
+  - time: 144
+    type: 1
+    spriteIndex: 2
+  - time: 146
+    type: 1
+    spriteIndex: 3
+  - time: 148
+    type: 1
+    spriteIndex: 5
+  - time: 150
+    type: 1
+    spriteIndex: 4
+  - time: 152
+    type: 1
+    spriteIndex: 1
+  - time: 153
+    type: 1
+    spriteIndex: 2
+  - time: 154
+    type: 1
+    spriteIndex: 1
+  - time: 156
+    type: 1
+    spriteIndex: 4
+  - time: 158
+    type: 1
+    spriteIndex: 1
+  - time: 160
+    type: 1
+    spriteIndex: 2
+  - time: 161
+    type: 1
+    spriteIndex: 4
+  - time: 162
+    type: 1
+    spriteIndex: 2
+  - time: 163
+    type: 1
+    spriteIndex: 5
+  - time: 164
+    type: 1
+    spriteIndex: 3
+  - time: 165
+    type: 1
+    spriteIndex: 5
+  - time: 166
+    type: 1
+    spriteIndex: 3
+  - time: 168
+    type: 1
+    spriteIndex: 4
+  - time: 168.5
+    type: 1
+    spriteIndex: 2
+  - time: 169
+    type: 1
+    spriteIndex: 4
+  - time: 169.5
+    type: 1
+    spriteIndex: 1
+  - time: 176
+    type: 1
+    spriteIndex: 3
+  - time: 177
+    type: 1
+    spriteIndex: 5
+  - time: 180
+    type: 1
+    spriteIndex: 2
+  - time: 181
+    type: 1
+    spriteIndex: 5
+  - time: 184
+    type: 1
+    spriteIndex: 1
+  - time: 185
+    type: 1
+    spriteIndex: 3
+  - time: 186
+    type: 1
+    spriteIndex: 1
+  - time: 192
+    type: 1
+    spriteIndex: 3
+  pointer: 192
+  denominator: 3
+  boolKey: Tutorial
+  isBoolKeyPlayerPref: 1

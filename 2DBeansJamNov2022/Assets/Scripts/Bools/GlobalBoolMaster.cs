@@ -10,7 +10,6 @@ using This = Unity.VisualScripting.This;
 public class GlobalBoolMaster : MonoBehaviour
 {
     
-    private static bool initialized = false;
     private static GlobalBoolMaster instance
     {
         get
@@ -20,7 +19,6 @@ public class GlobalBoolMaster : MonoBehaviour
                 var go = new GameObject("_GlobalBoolMaster");
                 DontDestroyOnLoad(go);
                 _instance = go.AddComponent<GlobalBoolMaster>();
-                initialized = true;
             }
 
             return _instance;
@@ -29,10 +27,6 @@ public class GlobalBoolMaster : MonoBehaviour
 
     private static GlobalBoolMaster _instance;
 
-    private void Awake()
-    {
-        initialized = false;
-    }
 
     [SerializeField]
     private List<BoolKey> keys = new();
@@ -74,6 +68,11 @@ public class GlobalBoolMaster : MonoBehaviour
         public override bool Equals(object obj)
         {
             return (obj.GetType() == typeof(BoolKey)) && ((BoolKey)obj).key == this.key && ((BoolKey)obj).value == this.value;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public static BoolKey consist(string key, bool value)

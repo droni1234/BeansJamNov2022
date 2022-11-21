@@ -78,6 +78,11 @@ public class MenuController : MonoBehaviour
         controlls.alpha = 1F;
     }
 
+    public void ResetPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void QuitGame()
     {
         Application.Quit();
