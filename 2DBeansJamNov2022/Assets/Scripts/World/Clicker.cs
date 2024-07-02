@@ -31,7 +31,7 @@ public class Clicker : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        {   
+        {
             // Test 
             //print("Maustaste is pressed");
             // Mouse Posi

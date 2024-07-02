@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 using whip.battle;
 
 public class DialogueManager2 : MonoBehaviour
@@ -33,6 +34,8 @@ public class DialogueManager2 : MonoBehaviour
     {
 
         animator.SetBool("IsOpen", true);
+        EventSystem.current.SetSelectedGameObject(chatboxCanvasGroup.gameObject);
+        chatboxCanvasGroup.interactable = true;
         chatboxCanvasGroup.alpha = 1F;
         chatboxCanvasGroup.blocksRaycasts = true;
         currentMessage = messages;
@@ -131,6 +134,7 @@ public class DialogueManager2 : MonoBehaviour
     void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false);
+        chatboxCanvasGroup.interactable = false;
         chatboxCanvasGroup.alpha = 0F;
         chatboxCanvasGroup.blocksRaycasts = false;
         if (fight)

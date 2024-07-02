@@ -287,10 +287,6 @@ MonoBehaviour:
     key: 3
   - time: 171.5
     key: 1
-  - time: 172
-    key: 0
-  - time: 172
-    key: 3
   - time: 177
     key: 1
   - time: 177
@@ -548,6 +544,10 @@ MonoBehaviour:
   - time: 166.25
     key: 0
   - time: 170.25
+    key: 3
+  - time: 172
+    key: 0
+  - time: 172
     key: 3
   looks:
   - time: 4

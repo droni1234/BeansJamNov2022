@@ -1,0 +1,613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f260af4d2b334689b290d473d63f2, type: 3}
+  m_Name: ErwinFight
+  m_EditorClassIdentifier: 
+  bpm: 158
+  warmup: 4
+  enemy:
+    sprites:
+    - {fileID: 21300000, guid: 6c4d93220fdba2846914e59ed4b3c620, type: 3}
+  player:
+    sprites:
+    - {fileID: 21300000, guid: 42b2c86ca28a1fe489b1f6ec25f383cb, type: 3}
+  audio: {fileID: 8300000, guid: aac105aba894ca343aa2e36cd0da277d, type: 3}
+  speed: 12
+  healthAmount: 20
+  healthRestore: 10
+  healthLoss: 1
+  notes:
+  - time: 0.5
+    key: 1
+  - time: 2
+    key: 0
+  - time: 4.5
+    key: 1
+  - time: 8.5
+    key: 1
+  - time: 10.5
+    key: 0
+  - time: 14.25
+    key: 2
+  - time: 16.25
+    key: 1
+  - time: 18
+    key: 0
+  - time: 26
+    key: 0
+  - time: 30
+    key: 3
+  - time: 32
+    key: 1
+  - time: 33.5
+    key: 0
+  - time: 34
+    key: 3
+  - time: 34.5
+    key: 0
+  - time: 35
+    key: 2
+  - time: 35.5
+    key: 3
+  - time: 36
+    key: 0
+  - time: 37
+    key: 0
+  - time: 37.5
+    key: 3
+  - time: 38
+    key: 0
+  - time: 38.5
+    key: 3
+  - time: 39
+    key: 1
+  - time: 39.5
+    key: 2
+  - time: 41.25
+    key: 0
+  - time: 41.75
+    key: 3
+  - time: 42.25
+    key: 0
+  - time: 42.75
+    key: 1
+  - time: 43.25
+    key: 2
+  - time: 44
+    key: 3
+  - time: 45
+    key: 3
+  - time: 45.75
+    key: 2
+  - time: 46.5
+    key: 1
+  - time: 47.5
+    key: 0
+  - time: 48.75
+    key: 0
+  - time: 49.25
+    key: 3
+  - time: 49.5
+    key: 1
+  - time: 49.75
+    key: 3
+  - time: 50.25
+    key: 0
+  - time: 50.75
+    key: 2
+  - time: 51.5
+    key: 0
+  - time: 53
+    key: 0
+  - time: 53.5
+    key: 3
+  - time: 53.75
+    key: 0
+  - time: 54
+    key: 3
+  - time: 54.75
+    key: 1
+  - time: 55
+    key: 0
+  - time: 57
+    key: 0
+  - time: 57.5
+    key: 3
+  - time: 58.25
+    key: 0
+  - time: 59.25
+    key: 0
+  - time: 59.25
+    key: 3
+  - time: 59.5
+    key: 0
+  - time: 59.5
+    key: 3
+  - time: 59.75
+    key: 0
+  - time: 59.75
+    key: 3
+  - time: 60.25
+    key: 2
+  - time: 60.25
+    key: 3
+  - time: 60.5
+    key: 2
+  - time: 60.5
+    key: 3
+  - time: 60.75
+    key: 2
+  - time: 60.75
+    key: 3
+  - time: 61.25
+    key: 0
+  - time: 61.25
+    key: 1
+  - time: 61.5
+    key: 0
+  - time: 61.5
+    key: 1
+  - time: 61.75
+    key: 0
+  - time: 61.75
+    key: 1
+  - time: 62.25
+    key: 1
+  - time: 62.25
+    key: 2
+  - time: 62.5
+    key: 1
+  - time: 62.5
+    key: 2
+  - time: 62.75
+    key: 1
+  - time: 62.75
+    key: 2
+  - time: 63.25
+    key: 0
+  - time: 63.75
+    key: 1
+  - time: 64.25
+    key: 2
+  - time: 64.75
+    key: 3
+  - time: 65.25
+    key: 0
+  - time: 65.75
+    key: 1
+  - time: 66.25
+    key: 2
+  - time: 66.75
+    key: 3
+  - time: 67.25
+    key: 0
+  - time: 67.5
+    key: 0
+  - time: 68
+    key: 3
+  - time: 69.25
+    key: 0
+  - time: 69.75
+    key: 1
+  - time: 70.5
+    key: 2
+  - time: 70.75
+    key: 2
+  - time: 71
+    key: 2
+  - time: 71.25
+    key: 0
+  - time: 71.75
+    key: 1
+  - time: 72.25
+    key: 2
+  - time: 72.75
+    key: 3
+  - time: 73.25
+    key: 0
+  - time: 73.75
+    key: 1
+  - time: 74.25
+    key: 2
+  - time: 74.75
+    key: 3
+  - time: 75.25
+    key: 3
+  - time: 75.75
+    key: 3
+  - time: 76.25
+    key: 3
+  - time: 76.75
+    key: 2
+  - time: 77.25
+    key: 2
+  - time: 77.75
+    key: 2
+  - time: 78.25
+    key: 2
+  - time: 78.75
+    key: 1
+  - time: 79.25
+    key: 0
+  - time: 79.75
+    key: 1
+  - time: 80.25
+    key: 2
+  - time: 80.75
+    key: 3
+  - time: 81.25
+    key: 0
+  - time: 81.75
+    key: 1
+  - time: 82.25
+    key: 2
+  - time: 82.75
+    key: 3
+  - time: 83.25
+    key: 0
+  - time: 83.75
+    key: 1
+  - time: 84.25
+    key: 2
+  - time: 84.75
+    key: 3
+  - time: 85.25
+    key: 0
+  - time: 85.75
+    key: 1
+  - time: 86.25
+    key: 2
+  - time: 86.75
+    key: 3
+  - time: 87.25
+    key: 0
+  - time: 87.75
+    key: 1
+  - time: 88.25
+    key: 2
+  - time: 88.75
+    key: 3
+  - time: 90.75
+    key: 2
+  - time: 91.25
+    key: 2
+  - time: 91.75
+    key: 3
+  - time: 92.25
+    key: 3
+  - time: 92.75
+    key: 2
+  - time: 93.5
+    key: 1
+  - time: 94.75
+    key: 3
+  - time: 95
+    key: 3
+  - time: 95.75
+    key: 0
+  - time: 95.75
+    key: 1
+  - time: 97
+    key: 3
+  - time: 97.5
+    key: 1
+  - time: 97.5
+    key: 0
+  - time: 100
+    key: 0
+  - time: 101.5
+    key: 0
+  - time: 102
+    key: 0
+  - time: 103
+    key: 1
+  - time: 104
+    key: 0
+  - time: 105.5
+    key: 1
+  - time: 106
+    key: 0
+  - time: 107
+    key: 1
+  - time: 107.5
+    key: 1
+  - time: 108
+    key: 1
+  - time: 110.5
+    key: 0
+  - time: 111
+    key: 1
+  - time: 111.5
+    key: 2
+  - time: 112
+    key: 3
+  - time: 112.5
+    key: 0
+  - time: 113
+    key: 1
+  - time: 113.5
+    key: 2
+  - time: 114
+    key: 3
+  - time: 114.5
+    key: 0
+  - time: 115
+    key: 1
+  - time: 115.5
+    key: 2
+  - time: 116
+    key: 3
+  - time: 126.5
+    key: 1
+  - time: 128.5
+    key: 0
+  - time: 130.5
+    key: 1
+  - time: 132.5
+    key: 1
+  - time: 134.5
+    key: 1
+  - time: 136.5
+    key: 0
+  - time: 140.5
+    key: 2
+  - time: 142.25
+    key: 3
+  - time: 142.75
+    key: 3
+  - time: 143.25
+    key: 3
+  - time: 143.75
+    key: 3
+  - time: 144.25
+    key: 3
+  - time: 144.75
+    key: 3
+  - time: 145.25
+    key: 3
+  - time: 145.75
+    key: 3
+  - time: 146.25
+    key: 3
+  - time: 146.75
+    key: 3
+  - time: 147.25
+    key: 3
+  - time: 147.75
+    key: 3
+  - time: 148.25
+    key: 3
+  - time: 148.75
+    key: 3
+  - time: 149.25
+    key: 3
+  - time: 149.75
+    key: 3
+  - time: 150.25
+    key: 3
+  - time: 150.75
+    key: 3
+  - time: 150.75
+    key: 0
+  - time: 151.25
+    key: 0
+  - time: 151.25
+    key: 3
+  - time: 151.75
+    key: 0
+  - time: 151.75
+    key: 3
+  - time: 152.25
+    key: 0
+  - time: 152.25
+    key: 3
+  - time: 152.75
+    key: 0
+  - time: 152.75
+    key: 3
+  - time: 153.25
+    key: 0
+  - time: 153.25
+    key: 3
+  - time: 153.75
+    key: 0
+  - time: 153.75
+    key: 3
+  - time: 154.25
+    key: 0
+  - time: 154.25
+    key: 3
+  - time: 154.75
+    key: 0
+  - time: 154.75
+    key: 3
+  - time: 155.25
+    key: 0
+  - time: 155.25
+    key: 3
+  - time: 155.75
+    key: 0
+  - time: 155.75
+    key: 3
+  - time: 158.25
+    key: 2
+  - time: 158.25
+    key: 3
+  - time: 161
+    key: 1
+  - time: 161.75
+    key: 1
+  - time: 162
+    key: 1
+  - time: 163.5
+    key: 1
+  - time: 165
+    key: 0
+  - time: 167.25
+    key: 2
+  - time: 168.75
+    key: 0
+  - time: 170
+    key: 0
+  - time: 171
+    key: 0
+  - time: 171
+    key: 1
+  - time: 172
+    key: 1
+  - time: 172
+    key: 2
+  - time: 173
+    key: 2
+  - time: 173
+    key: 3
+  - time: 174
+    key: 0
+  - time: 174.25
+    key: 1
+  - time: 174.5
+    key: 2
+  - time: 175.5
+    key: 3
+  - time: 176.75
+    key: 0
+  - time: 177
+    key: 0
+  - time: 177.75
+    key: 1
+  - time: 179.25
+    key: 0
+  - time: 180.75
+    key: 0
+  - time: 181
+    key: 0
+  - time: 181.75
+    key: 0
+  - time: 183.25
+    key: 2
+  - time: 184.75
+    key: 1
+  - time: 185.75
+    key: 1
+  - time: 187.25
+    key: 1
+  - time: 188.5
+    key: 0
+  - time: 188.75
+    key: 0
+  - time: 189.75
+    key: 1
+  - time: 191.5
+    key: 0
+  - time: 191.5
+    key: 1
+  - time: 191.5
+    key: 2
+  - time: 191.5
+    key: 3
+  - time: 194
+    key: 0
+  - time: 195.5
+    key: 0
+  - time: 195.5
+    key: 1
+  - time: 195.5
+    key: 2
+  - time: 195.5
+    key: 3
+  - time: 197.5
+    key: 1
+  - time: 199.5
+    key: 0
+  - time: 199.5
+    key: 1
+  - time: 199.5
+    key: 2
+  - time: 199.5
+    key: 3
+  - time: 201.5
+    key: 2
+  - time: 203.5
+    key: 0
+  - time: 203.5
+    key: 1
+  - time: 203.5
+    key: 2
+  - time: 203.5
+    key: 3
+  - time: 205.5
+    key: 3
+  - time: 207.5
+    key: 0
+  - time: 207.5
+    key: 1
+  - time: 207.5
+    key: 2
+  - time: 207.5
+    key: 3
+  - time: 209.5
+    key: 3
+  - time: 211.5
+    key: 0
+  - time: 211.5
+    key: 2
+  - time: 211.5
+    key: 3
+  - time: 211.5
+    key: 1
+  - time: 213.5
+    key: 2
+  - time: 215.5
+    key: 0
+  - time: 215.5
+    key: 1
+  - time: 215.5
+    key: 2
+  - time: 215.5
+    key: 3
+  - time: 217
+    key: 1
+  - time: 219
+    key: 0
+  - time: 219
+    key: 1
+  - time: 219
+    key: 2
+  - time: 219
+    key: 3
+  - time: 220
+    key: 0
+  - time: 220
+    key: 2
+  - time: 220.25
+    key: 1
+  - time: 220.25
+    key: 3
+  - time: 221
+    key: 1
+  - time: 221
+    key: 3
+  - time: 159.75
+    key: 1
+  looks:
+  - time: 0.5
+    lookTowards: 0
+  - time: 32
+    lookTowards: 1
+  sprites:
+  - time: 28
+    type: 1
+    spriteIndex: 0
+  pointer: 157
+  denominator: 8
+  boolKey: Erwin
+  isBoolKeyPlayerPref: 1

@@ -21,15 +21,25 @@ namespace whip.battle
 
         public Transform reference;
 
+        private bool hit = false;
+        
         private void Update()
         {
+            
+            if (transform.localPosition.y < -100)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            
             if (!FightSystem.instance.startPlaying) return;
             
-            float timing = (((time + FightSystem.instance.warmupTime) * beat - FightSystem.instance.currentTime) *
+            float timing = (((FightSystem.instance.debugTime == 0 ? time + FightSystem.instance.warmupTime : time) * beat - FightSystem.instance.currentTime) *
                             FightSystem.instance.battle.speed);
             transform.position = new Vector3(transform.position.x, reference.position.y + timing, transform.position.z);
             if (Input.GetButtonDown(buttonToPress) && pressable)
             {
+                hit = true;
                 FightSystem.instance.NoteHit();
                 DestroyImmediate(gameObject);
             }
@@ -45,6 +55,7 @@ namespace whip.battle
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            if(hit) return;
             if(!pressable) return;
             if (!other.CompareTag("Activator")) return;
             pressable = false;

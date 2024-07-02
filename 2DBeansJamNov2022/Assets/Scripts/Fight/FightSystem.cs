@@ -77,7 +77,9 @@ namespace whip.battle
 
         [HideInInspector] public string winLevel;
 
-        public float currentTime => Time.time - startTime;
+        public float debugTime;
+
+        public float currentTime => Time.time - startTime + debugTime;
 
         private void Awake()
         {
@@ -139,8 +141,9 @@ namespace whip.battle
 
             if (startPlaying)
             {
-                if (currentTime > (warmupTime * scroller.beatTempo) && !playedMusic)
+                if (currentTime > ((debugTime != 0) ? 0 : ((warmupTime * scroller.beatTempo))) && !playedMusic)
                 {
+                    music.timeSamples = (int) ((debugTime * music.clip.frequency));
                     music.Play();
                     playedMusic = true;
                 }
@@ -287,7 +290,15 @@ namespace whip.battle
                 PlayerPrefs.Save();
             }
             GlobalBoolMaster.setBool(battle.boolKey, true);
-            SceneManager.LoadSceneAsync(winLevel, LoadSceneMode.Single);
+            
+            if (SceneUtility.GetBuildIndexByScenePath(winLevel) != -1) {
+                SceneManager.LoadSceneAsync(winLevel, LoadSceneMode.Single);
+            }
+            else
+            {
+                Debug.Log(SceneManager.GetSceneByName(winLevel) + " is invalid");
+                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            }
             Destroy(this);
         }
 
